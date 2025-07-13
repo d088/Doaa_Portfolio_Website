@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>YouTube Engagement Analysis – Power BI</title>
+  <link rel="stylesheet" href="project1.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+  <script src="script.js" defer></script>
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+<div id="particles-js"></div>
+  
+  <!-- Header -->
+  <header>
+    <h1> Adventure Works2022 Data</h1>
+    <p>Interactive Power BI Dashboard to Unlock Customer & Sales Insights </p>
+    <a href="index.html" class="cv-button" style="margin-top: 1rem; display: inline-block; color: azure;">
+      <i class="fas fa-arrow-left"></i> Back to Portfolio
+    </a>
+  </header>
+
+
+
+  <!-- Container -->
+  <section class="container">
+
+    <!-- Embedded Power BI Dashboard -->
+    <div class="project-frame">
+      <iframe title="Adventure Works2022 Dashboard" width="1140" height="541.25" 
+      src="https://app.powerbi.com/reportEmbed?reportId=339c132b-c3f1-4d3d-9517-cb45b85e8a5e&autoAuth=true&ctid=5f593c84-cad4-46c8-b3de-321c3e829a99" 
+      frameborder="0" allowFullScreen="true"></iframe>
+    </div>
+  <div class="fixed-icons">
+  <a href="https://linkedin.com/in/doaa-ebrahim-19b4751ba" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+  <a href="https://github.com/d088" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+  <a href="mailto:doaae987@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+  </div>
+
+    <!-- Project Description -->
+    <div class="project-details">
+      <h2>Project Overview</h2>
+      <p>This project focuses on analyzing the Adventure Works dataset from Microsoft using "Power BI, leveraging "DAX functions" and "Power Query" to clean, transform, and extract actionable insights. Here's a breakdown of key findings:</p>
+      <p>The dataset includes:</p>
+      <ul>
+        <li>📊 18k+ Customer</li>
+        <li>🎥 2K+ Orders</li>
+        <li>📺 158 Product</li>
+      </ul>
+
+      <div class="tip">
+        🔍 Technical Approach:
+      <ul>
+        <li>Utilized "DAX functions" to calculate "Total Sales" and "Profit"</li>
+        <li>Standardized all currencies to "USD" for consistency.</li>
+        <li>Leveraged "Power Query" for comprehensive "data cleaning and transformation".</li>
+      </ul>
+       
+      </div>
+
+      <h2>Customer insights:</h2>
+      <ul>
+        <li>18K Total Customers with an "Average Yearly Income" of $57,306 across 6 countries.</li>
+        <li>The 40-60 age group dominates the customer base (~11.8K customers).</li>
+        <li>54.16% of customers are "Single" while 45.84% are "Married".</li>
+        <li>"Commute Distance" impacts customer distribution, with most residing within **0-1 miles (6.3K customers)**</li>
+      </ul>
+
+      <h2>Sales & Profit Insights:</h2>
+      <ul>
+        <li>"Total revenue" reached $2M, with a "Total Profit" of $868K</li>
+        <li>"Bikes" represent the largest share of orders (60.45%), followed by "Clothing (24.11%)" and "Accessories (15.44%)".</li>
+        <li>The United States leads in total orders (1,741 orders), followed by Australia (1,150 orders).</li>
+      </ul>
+    
+    <h2>Top Performing Products:</h2>
+      <ul>
+        <li>"Mountain-200" leads the revenue chart with "$657K+", contributing to 302 total orders.</li>
+        <li>"Road-150" and "Road-250" follow closely, with significant revenue and order volumes.</li>
+      </ul>
+    
+    
+    </div>
+
+
+    <!-- Related Projects -->
+    <div class="project-details" style="margin-top: 3rem;">
+      <h2>You Can Also See</h2>
+      <ul>
+        <li><a href="project1.html"><i class="fas fa-chart-line"></i> YouTube Dashboard </a></li>
+        <li><a href="project3.html"><i class="fas fa-user-check"></i> Customer Churn Prediction – Python Notebook</a></li>
+      </ul>
+    </div>
+
+  </section>
+
+  <!-- Footer with Contacts -->
+  <footer>
+    <p><i class="fas fa-envelope icon"></i> <a href="mailto:doaae987@gmail.com">doaae987@gmail.com</a></p>
+    <p><i class="fab fa-linkedin icon"></i> <a href="https://linkedin.com/in/doaa-ebrahim-19b4751ba">LinkedIn</a></p>
+    <p><i class="fab fa-github icon"></i> <a href="https://github.com/d088">GitHub</a></p>
+  </footer>
+
+  <!-- Load Particles.js from CDN -->
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<script>
+  particlesJS("particles-js", {
+    particles: {
+      number: { value: 50 },
+      color: { value: "#1e40af" },
+      shape: { type: "circle" },
+      opacity: { value: 0.4 },
+      size: { value: 3 },
+      line_linked: {
+        enable: true,
+        distance: 150,
+        color: "#1e40af",
+        opacity: 0.4,
+        width: 1
+      },
+      move: {
+        enable: true,
+        speed: 2
+      }
+    },
+    interactivity: {
+      events: {
+        onhover: { enable: true, mode: "grab" },
+        onclick: { enable: true, mode: "push" }
+      },
+      modes: {
+        grab: { distance: 140, line_linked: { opacity: 1 } },
+        push: { particles_nb: 4 }
+      }
+    },
+    retina_detect: true
+  });
+</script>
+
+</body>
+</html>

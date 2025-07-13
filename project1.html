@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>YouTube Engagement Analysis – Power BI</title>
+  <link rel="stylesheet" href="project1.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+  <script src="script.js" defer></script>
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+<div id="particles-js"></div>
+  
+  <!-- Header -->
+  <header>
+    <h1>YouTube Engagement and Trending Analysis</h1>
+    <p>Interactive Power BI Dashboard to explore global YouTube trends and performance</p>
+    <a href="index.html" class="cv-button" style="margin-top: 1rem; display: inline-block; color: azure;">
+      <i class="fas fa-arrow-left"></i> Back to Portfolio
+    </a>
+  </header>
+
+
+
+  <!-- Container -->
+  <section class="container">
+
+    <!-- Embedded Power BI Dashboard -->
+    <div class="project-frame">
+      <iframe title="YouTube Dashboard"
+        src="https://app.powerbi.com/reportEmbed?reportId=1128b18c-f6bd-457e-9c4c-7134ffefbc9a&autoAuth=true&ctid=5f593c84-cad4-46c8-b3de-321c3e829a99"
+        frameborder="0" allowFullScreen="true">
+      </iframe>
+    </div>
+  <div class="fixed-icons">
+  <a href="https://linkedin.com/in/doaa-ebrahim-19b4751ba" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+  <a href="https://github.com/d088" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+  <a href="mailto:doaae987@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+  </div>
+
+    <!-- Project Description -->
+    <div class="project-details">
+      <h2>Project Overview</h2>
+      <p>This project focuses on analyzing YouTube engagement metrics to uncover trends in audience behavior, content performance, and key factors influencing video popularity.</p>
+      <p>The dataset includes:</p>
+      <ul>
+        <li>📊 499+ Billion Views</li>
+        <li>🎥 184,000 Videos</li>
+        <li>📺 38,000 Channels</li>
+      </ul>
+
+      <div class="tip">
+        This dashboard was developed in Power BI with DAX and Excel preprocessing to visualize engagement patterns, sentiment, and recommendations.
+      </div>
+
+      <h2>Key Insights & Findings</h2>
+      <ul>
+        <li><strong>Total Views:</strong> 499B — massive global reach</li>
+        <li><strong>Total Likes:</strong> 14B — high audience interaction</li>
+        <li><strong>Total Dislikes:</strong> 799M — sentiment feedback</li>
+        <li><strong>Top Channels:</strong> Childish Gambino, Flow La Movie, DrakeVEVO</li>
+        <li><strong>Popular Tags:</strong> “2018,” “action,” “Amorfoda”</li>
+        <li><strong>Peak Months:</strong> May & June</li>
+        <li><strong>Best Post Times:</strong> 06:00 AM & 06:00 PM</li>
+        <li><strong>Top Countries:</strong> UK, US, Canada</li>
+      </ul>
+
+      <h2>Strategic Recommendations</h2>
+      <ul>
+        <li>✅ Post at peak hours (06:00 AM / PM)</li>
+        <li>✅ Use trending keywords: music, entertainment, viral</li>
+        <li>✅ Monitor sentiment: likes vs. dislikes</li>
+        <li>✅ Focus on top markets: US, UK, Canada</li>
+        <li>✅ Be data-driven: refine thumbnails and titles</li>
+      </ul>
+    </div>
+
+    <!-- Related Projects -->
+    <div class="project-details" style="margin-top: 3rem;">
+      <h2>You Can Also See</h2>
+      <ul>
+        <li><a href="project2.html"><i class="fas fa-chart-line"></i> Marketing Performance Dashboard – Excel</a></li>
+        <li><a href="project3.html"><i class="fas fa-user-check"></i> Customer Churn Prediction – Python Notebook</a></li>
+      </ul>
+    </div>
+
+  </section>
+
+  <!-- Footer with Contacts -->
+  <footer>
+    <p><i class="fas fa-envelope icon"></i> <a href="mailto:doaae987@gmail.com">doaae987@gmail.com</a></p>
+    <p><i class="fab fa-linkedin icon"></i> <a href="https://linkedin.com/in/doaa-ebrahim-19b4751ba">LinkedIn</a></p>
+    <p><i class="fab fa-github icon"></i> <a href="https://github.com/d088">GitHub</a></p>
+  </footer>
+
+  <!-- Load Particles.js from CDN -->
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<script>
+  particlesJS("particles-js", {
+    particles: {
+      number: { value: 50 },
+      color: { value: "#1e40af" },
+      shape: { type: "circle" },
+      opacity: { value: 0.4 },
+      size: { value: 3 },
+      line_linked: {
+        enable: true,
+        distance: 150,
+        color: "#1e40af",
+        opacity: 0.4,
+        width: 1
+      },
+      move: {
+        enable: true,
+        speed: 2
+      }
+    },
+    interactivity: {
+      events: {
+        onhover: { enable: true, mode: "grab" },
+        onclick: { enable: true, mode: "push" }
+      },
+      modes: {
+        grab: { distance: 140, line_linked: { opacity: 1 } },
+        push: { particles_nb: 4 }
+      }
+    },
+    retina_detect: true
+  });
+</script>
+
+</body>
+</html>
