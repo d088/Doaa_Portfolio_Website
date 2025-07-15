@@ -14,8 +14,8 @@
   
   <!-- Header -->
   <header>
-    <h1> Adventure Works2022 Data</h1>
-    <p>Interactive Power BI Dashboard to Unlock Customer & Sales Insights </p>
+    <h1> Super Store Sales Analysis</h1>
+    <p>Interactive Tableau Dashboard to Unlock Category & Sales Insights </p>
     <a href="index.html" class="cv-button" style="margin-top: 1rem; display: inline-block; color: azure;">
       <i class="fas fa-arrow-left"></i> Back to Portfolio
     </a>
@@ -24,15 +24,36 @@
 
 
   <!-- Container -->
-  <section class="project_container">
-    <iframe
-  src="https://public.tableau.com/views/superstoresales_17525697837420/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link"
-  width="100%"
-  height="860"
-  style="border: none;"
-  allowfullscreen
-></iframe>
-    
+  <section class="container">
+
+    <div class='tableauPlaceholder' id='viz1752592828664' style='position: relative'><noscript>
+      <a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;su&#47;superstoresales_17525697837420&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript>
+      <object class='tableauViz'  style='display:none;'>
+        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+        <param name='embed_code_version' value='3' /> 
+        <param name='path' value='views&#47;superstoresales_17525697837420&#47;Dashboard1?:language=en-US&amp;:embed=true&amp;publish=yes&amp;:sid=FB389FD7B6214780B6365034F122B724-0:0&amp;:redirect=auth' /> 
+        <param name='toolbar' value='yes' />
+        <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;su&#47;superstoresales_17525697837420&#47;Dashboard1&#47;1.png' /> 
+        <param name='animate_transition' value='yes' />
+        <param name='display_static_image' value='yes' />
+        <param name='display_spinner' value='yes' />
+        <param name='display_overlay' value='yes' />
+        <param name='display_count' value='yes' />
+        <param name='language' value='en-US' />
+        <param name='filter' value='publish=yes' />
+      </object></div>                
+      <script type='text/javascript'>                    
+      var divElement = document.getElementById('viz1752592828664');                    
+      var vizElement = divElement.getElementsByTagName('object')[0];                    
+      if ( divElement.offsetWidth > 800 ) { vizElement.style.minWidth='1000px';vizElement.style.maxWidth='100%';vizElement.style.minHeight='850px';vizElement.style.maxHeight=(divElement.offsetWidth*0.75)+'px';} 
+      else if ( divElement.offsetWidth > 500 ) { vizElement.style.minWidth='1000px';vizElement.style.maxWidth='100%';vizElement.style.minHeight='850px';vizElement.style.maxHeight=(divElement.offsetWidth*0.75)+'px';} 
+      else { vizElement.style.width='100%';vizElement.style.minHeight='1750px';vizElement.style.maxHeight=(divElement.offsetWidth*1.77)+'px';}                     
+      var scriptElement = document.createElement('script');                    
+      scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+      vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+      </script>
+
+  
   <div class="fixed-icons">
   <a href="https://linkedin.com/in/doaa-ebrahim-19b4751ba" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
   <a href="https://github.com/d088" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
@@ -42,45 +63,47 @@
     <!-- Project Description -->
     <div class="project-details">
       <h2>Project Overview</h2>
-      <p>This project focuses on analyzing the Adventure Works dataset from Microsoft using "Power BI, leveraging "DAX functions" and "Power Query" to clean, transform, and extract actionable insights. Here's a breakdown of key findings:</p>
-      <p>The dataset includes:</p>
-      <ul>
-        <li>📊 18k+ Customer</li>
-        <li>🎥 2K+ Orders</li>
-        <li>📺 158 Product</li>
-      </ul>
+       <p>This interactive dashboard was built in <strong>Tableau</strong> to analyze a fictional Superstore's performance across sales, profit, and quantity dimensions. The goal was to derive regional, category-level, and temporal insights from the dataset.</p>
 
-      <div class="tip">
-        🔍 Technical Approach:
+      <h2>🔍 Key Insights</h2>
       <ul>
-        <li>Utilized "DAX functions" to calculate "Total Sales" and "Profit"</li>
-        <li>Standardized all currencies to "USD" for consistency.</li>
-        <li>Leveraged "Power Query" for comprehensive "data cleaning and transformation".</li>
-      </ul>
-       
+        <li><strong>Total Sales:</strong> £2.3M </li>
+        <li><strong>Profit:</strong> £286K</li>
+        <li><strong>Profit Ratio:</strong> 12.47%</li>
+        <li><strong>Units Sold:</strong> 37,873</li>
+       </ul>
+      <div class="tip">
+        <h2>📊 Tools Used</h2>
+      <p>Built with: <strong>Tableau Public</strong>. Visualized using pie charts, line graphs, maps, bar charts, and dynamic filters.</p>
       </div>
 
-      <h2>Customer insights:</h2>
+      <h2>Top Region:</h2>
       <ul>
-        <li>18K Total Customers with an "Average Yearly Income" of $57,306 across 6 countries.</li>
-        <li>The 40-60 age group dominates the customer base (~11.8K customers).</li>
-        <li>54.16% of customers are "Single" while 45.84% are "Married".</li>
-        <li>"Commute Distance" impacts customer distribution, with most residing within **0-1 miles (6.3K customers)**</li>
+        <li>1The West leads with 31.5% of total sales (~£725K), suggesting strong customer demand and market presence there. In contrast, South and Central regions offer room for growth.</li>
       </ul>
 
-      <h2>Sales & Profit Insights:</h2>
+      <h2>Category Performance:</h2>
       <ul>
-        <li>"Total revenue" reached $2M, with a "Total Profit" of $868K</li>
-        <li>"Bikes" represent the largest share of orders (60.45%), followed by "Clothing (24.11%)" and "Accessories (15.44%)".</li>
-        <li>The United States leads in total orders (1,741 orders), followed by Australia (1,150 orders).</li>
+        <li>Technology stands out with the highest average sales per product, while Furniture generates the most revenue.
+ Office Supplies has lower average sales, indicating potential for pricing optimization.</li>
       </ul>
     
-    <h2>Top Performing Products:</h2>
+    <h2>Seasonal Trends:</h2>
       <ul>
-        <li>"Mountain-200" leads the revenue chart with "$657K+", contributing to 302 total orders.</li>
-        <li>"Road-150" and "Road-250" follow closely, with significant revenue and order volumes.</li>
+        <li>Sales peak in November and September, with February showing the lowest activity — useful for planning future campaigns and inventory.</li>
       </ul>
-    
+     
+      <h2>Sub-Category Highlights:</h2>
+      <ul>
+        <li>🔝 Top 3: Phones, Chairs, Storage</li>
+        <i>🔻 Bottom 3: Fasteners, Labels, Envelopes</i>
+        <p>These trends can guide product strategy and promotional focus.</p>
+      </ul>
+
+      <h2> Geographical Insights:</h2>
+      <ul>
+        <li> States like California and New York dominate in sales, whereas others could benefit from localized marketing efforts.</li>
+      </ul>
     
     </div>
 
@@ -89,8 +112,8 @@
     <div class="project-details" style="margin-top: 3rem;">
       <h2>You Can Also See</h2>
       <ul>
-        <li><a href="project1.html"><i class="fas fa-chart-line"></i> YouTube Dashboard </a></li>
-        <li><a href="project3.html"><i class="fas fa-user-check"></i> Customer Churn Prediction – Python Notebook</a></li>
+        <li><a href="project1.html"><i class="fas fa-chart-line"></i> YouTube Dashboard - Power BI</a></li>
+        <li><a href="project2.html"><i class="fas fa-user-check"></i> AdventureWorks Dashboard – Power BI</a></li>
       </ul>
     </div>
 
