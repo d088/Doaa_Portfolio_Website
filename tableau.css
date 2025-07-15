@@ -64,6 +64,11 @@ header p {
   margin: 2rem auto;
   padding: 0 1rem;
 }
+.project_container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
 .project-frame {
   margin: 2rem 0;
   display: flex;
@@ -73,12 +78,11 @@ header p {
 }
 iframe {
   width: 100%;
-  max-width: 1200px;
-  height: 560px;
+  height: 105vh;
+  max-width: 2500px;
   border: none;
-  border-radius: 10px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
 }
+
 
 /* Project Description */
 .project-details {
