@@ -4,165 +4,148 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Super Store Sales Analysis – Tableau</title>
-  <link rel="stylesheet" href="projects.css" />
+  <link rel="stylesheet" href="projects (1).css" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
   <script src="script.js" defer></script>
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-<div id="particles-js"></div>
-  
-  <!-- Header -->
-  <header>
-    <h1> Super Store Sales Analysis</h1>
-    <p>Interactive Tableau Dashboard to Unlock Category & Sales Insights </p>
-    <a href="index.html" class="cv-button" style="margin-top: 1rem; display: inline-block; color: azure;">
-      <i class="fas fa-arrow-left"></i> Back to Portfolio
-    </a>
+  <!--Header-->
+  <header class="project-header enhanced-header">
+    <div class="header-bg"></div>
+    <div class="header-content">
+      <a href="index.html" class="cv-button back-btn">
+        <i class="fas fa-arrow-left"></i> Back to Portfolio
+      </a>
+      <i class="fas fa-chart-bar header-icon"></i>
+      <h1>Super Store Sales Analysis</h1>
+      <p class="subtitle">Interactive Tableau Dashboard to Unlock Category & Sales Insights</p>
+    </div>
   </header>
 
-
-
   <!-- Container -->
-  <section class="container">
+  <section class="container enhanced-project-container">
 
-    <div class='tableauPlaceholder' id='viz1752592828664' style='position: relative'><noscript>
-      <a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;su&#47;superstoresales_17525697837420&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript>
-      <object class='tableauViz'  style='display:none;'>
-        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
-        <param name='embed_code_version' value='3' /> 
-        <param name='path' value='views&#47;superstoresales_17525697837420&#47;Dashboard1?:language=en-US&amp;:embed=true&amp;publish=yes&amp;:sid=FB389FD7B6214780B6365034F122B724-0:0&amp;:redirect=auth' /> 
-        <param name='toolbar' value='yes' />
-        <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;su&#47;superstoresales_17525697837420&#47;Dashboard1&#47;1.png' /> 
-        <param name='animate_transition' value='yes' />
-        <param name='display_static_image' value='yes' />
-        <param name='display_spinner' value='yes' />
-        <param name='display_overlay' value='yes' />
-        <param name='display_count' value='yes' />
-        <param name='language' value='en-US' />
-        <param name='filter' value='publish=yes' />
-      </object></div>                
+    <!-- Embedded Tableau Dashboard -->
+    <div class="project-frame enhanced-frame" data-aos="zoom-in">
+      <div class='tableauPlaceholder' id='viz1752592828664' style='position: relative'>
+        <noscript>
+          <a href='#'><img alt=' ' src='https://public.tableau.com/static/images/su/superstoresales_17525697837420/Dashboard1/1_rss.png' style='border: none' /></a>
+        </noscript>
+        <object class='tableauViz' style='display:none;'>
+          <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+          <param name='embed_code_version' value='3' /> 
+          <param name='path' value='views/superstoresales_17525697837420/Dashboard1?:language=en-US&amp;:embed=true&amp;publish=yes' /> 
+          <param name='toolbar' value='yes' />
+          <param name='static_image' value='https://public.tableau.com/static/images/su/superstoresales_17525697837420/Dashboard1/1.png' /> 
+          <param name='animate_transition' value='yes' />
+          <param name='display_static_image' value='yes' />
+          <param name='display_spinner' value='yes' />
+          <param name='display_overlay' value='yes' />
+          <param name='display_count' value='yes' />
+        </object>
+      </div>                
       <script type='text/javascript'>                    
-      var divElement = document.getElementById('viz1752592828664');                    
-      var vizElement = divElement.getElementsByTagName('object')[0];                    
-      if ( divElement.offsetWidth > 800 ) { vizElement.style.minWidth='1000px';vizElement.style.maxWidth='100%';vizElement.style.minHeight='850px';vizElement.style.maxHeight=(divElement.offsetWidth*0.75)+'px';} 
-      else if ( divElement.offsetWidth > 500 ) { vizElement.style.minWidth='1000px';vizElement.style.maxWidth='100%';vizElement.style.minHeight='850px';vizElement.style.maxHeight=(divElement.offsetWidth*0.75)+'px';} 
-      else { vizElement.style.width='100%';vizElement.style.minHeight='1750px';vizElement.style.maxHeight=(divElement.offsetWidth*1.77)+'px';}                     
-      var scriptElement = document.createElement('script');                    
-      scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
-      vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+        var divElement = document.getElementById('viz1752592828664');                    
+        var vizElement = divElement.getElementsByTagName('object')[0];                    
+        if ( divElement.offsetWidth > 800 ) { vizElement.style.minWidth='1000px';vizElement.style.maxWidth='100%';vizElement.style.minHeight='850px';vizElement.style.maxHeight=(divElement.offsetWidth*0.75)+'px';} 
+        else if ( divElement.offsetWidth > 500 ) { vizElement.style.minWidth='1000px';vizElement.style.maxWidth='100%';vizElement.style.minHeight='850px';vizElement.style.maxHeight=(divElement.offsetWidth*0.75)+'px';} 
+        else { vizElement.style.width='100%';vizElement.style.minHeight='1750px';vizElement.style.maxHeight=(divElement.offsetWidth*1.77)+'px';}                     
+        var scriptElement = document.createElement('script');                    
+        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+        vizElement.parentNode.insertBefore(scriptElement, vizElement);                
       </script>
+    </div>
 
-  
-  <div class="fixed-icons">
-  <a href="https://linkedin.com/in/doaa-ebrahim-19b4751ba" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-  <a href="https://github.com/d088" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-  <a href="mailto:doaae987@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
-  </div>
+    <!-- Floating Social Icons -->
+    <div class="fixed-icons enhanced-fixed-icons">
+      <a href="https://linkedin.com/in/doaa-ebrahim-19b4751ba" target="_blank" title="LinkedIn" class="sticker bounce">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://github.com/d088" target="_blank" title="GitHub" class="sticker wiggle">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="mailto:doaae987@gmail.com" title="Email" class="sticker bounce">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </div>
 
     <!-- Project Description -->
-    <div class="project-details">
-      <h2>Project Overview</h2>
-       <p>This interactive dashboard was built in <strong>Tableau</strong> to analyze a fictional Superstore's performance across sales, profit, and quantity dimensions. The goal was to derive regional, category-level, and temporal insights from the dataset.</p>
-
-      <h2>🔍 Key Insights</h2>
-      <ul>
-        <li><strong>Total Sales:</strong> £2.3M </li>
-        <li><strong>Profit:</strong> £286K</li>
-        <li><strong>Profit Ratio:</strong> 12.47%</li>
-        <li><strong>Units Sold:</strong> 37,873</li>
-       </ul>
+    <div class="project-details enhanced-details" data-aos="fade-up">
+      <h2><i class="fas fa-lightbulb"></i> Project Overview</h2>
+      <p>This interactive dashboard was built in <strong>Tableau</strong> to analyze a fictional Superstore's performance across sales, profit, and quantity dimensions. The goal was to derive regional, category-level, and temporal insights from the dataset.</p>     
+      <h2><i class="fas fa-chart-line"></i> Key Insights</h2>
+      <div class="insights-grid">
+        <div class="insight-card"><strong>Total Sales:</strong> £2.3M<br><span class="insight-note">Overall revenue generated</span></div>
+        <div class="insight-card"><strong>Profit:</strong> £286K<br><span class="insight-note">Net profit margin 12.47%</span></div>
+        <div class="insight-card"><strong>Units Sold:</strong> 37,873<br><span class="insight-note">Total quantity sold</span></div>
+        <div class="insight-card"><strong>Top Region:</strong> West<br><span class="insight-note">31.5% of total sales</span></div>
+        <div class="insight-card"><strong>Peak Months:</strong> Nov & Sep<br><span class="insight-note">Seasonal sales spikes</span></div>
+        <div class="insight-card"><strong>Top Categories:</strong> Technology & Furniture<br><span class="insight-note">Highest revenue drivers</span></div>
+      </div>
       <div class="tip">
         <h2>📊 Tools Used</h2>
-      <p>Built with: <strong>Tableau Public</strong>. Visualized using pie charts, line graphs, maps, bar charts, and dynamic filters.</p>
+        <p>Built with: <strong>Tableau Public</strong>. Visualized using pie charts, line graphs, maps, bar charts, and dynamic filters.</p>
       </div>
 
-      <h2>Top Region:</h2>
-      <ul>
-        <li>1The West leads with 31.5% of total sales (~£725K), suggesting strong customer demand and market presence there. In contrast, South and Central regions offer room for growth.</li>
+      <h2>Top Region</h2>
+      <ul class="recommendations-list">
+        <li>The West leads with 31.5% of total sales (~£725K), suggesting strong customer demand. South and Central regions offer room for growth.</li>
       </ul>
 
-      <h2>Category Performance:</h2>
-      <ul>
-        <li>Technology stands out with the highest average sales per product, while Furniture generates the most revenue.
- Office Supplies has lower average sales, indicating potential for pricing optimization.</li>
-      </ul>
-    
-    <h2>Seasonal Trends:</h2>
-      <ul>
-        <li>Sales peak in November and September, with February showing the lowest activity — useful for planning future campaigns and inventory.</li>
-      </ul>
-     
-      <h2>Sub-Category Highlights:</h2>
-      <ul>
-        <li>🔝 Top 3: Phones, Chairs, Storage</li>
-        <i>🔻 Bottom 3: Fasteners, Labels, Envelopes</i>
-        <p>These trends can guide product strategy and promotional focus.</p>
+      <h2>Category Performance</h2>
+      <ul class="recommendations-list">
+        <li>Technology has the highest average sales per product; Furniture generates the most revenue; Office Supplies has potential for pricing optimization.</li>
       </ul>
 
-      <h2> Geographical Insights:</h2>
-      <ul>
-        <li> States like California and New York dominate in sales, whereas others could benefit from localized marketing efforts.</li>
+      <h2>Seasonal Trends</h2>
+      <ul class="recommendations-list">
+        <li>Sales peak in November and September, with February being the lowest — useful for planning campaigns and inventory.</li>
       </ul>
-    
+
+      <h2>Sub-Category Highlights</h2>
+      <ul class="recommendations-list">
+        <li>Top 3: Phones, Chairs, Storage</li>
+        <li>Bottom 3: Fasteners, Labels, Envelopes</li>
+      </ul>
+
+      <h2>Geographical Insights</h2>
+      <ul class="recommendations-list">
+        <li>States like California and New York dominate in sales, while others may benefit from localized marketing efforts.</li>
+      </ul>
     </div>
-
 
     <!-- Related Projects -->
-    <div class="project-details" style="margin-top: 3rem;">
-      <h2>You Can Also See</h2>
-      <ul>
+    <div class="project-details enhanced-details" style="margin-top: 3rem;" data-aos="fade-up">
+      <h2><i class="fas fa-link"></i> You Can Also See</h2>
+      <ul class="related-projects-list">
         <li><a href="project1.html"><i class="fas fa-chart-line"></i> YouTube Dashboard - Power BI</a></li>
         <li><a href="project2.html"><i class="fas fa-user-check"></i> AdventureWorks Dashboard – Power BI</a></li>
-        <li><a href="project4.html"><i class="fas fa-fa-code"></i> Google Store Cleaning & EDA – Python Notebook</a></li>
-         <li><a href="project5.html"><i class="fas fa-code"></i> Car Price Prediction using ML – Python Notebook</a></li>
+        <li><a href="project4.html"><i class="fas fa-code"></i> Google Store Cleaning & EDA – Python Notebook</a></li>
+        <li><a href="project5.html"><i class="fas fa-car"></i> Car Price Prediction using ML – Python Notebook</a></li>
       </ul>
     </div>
-
   </section>
 
-  <!-- Footer with Contacts -->
-  <footer>
-    <p><i class="fas fa-envelope icon"></i> <a href="mailto:doaae987@gmail.com">doaae987@gmail.com</a></p>
-    <p><i class="fab fa-linkedin icon"></i> <a href="https://linkedin.com/in/doaa-ebrahim-19b4751ba">LinkedIn</a></p>
-    <p><i class="fab fa-github icon"></i> <a href="https://github.com/d088">GitHub</a></p>
+  <!-- Footer -->
+  <footer class="enhanced-footer">
+    <div class="footer-links">
+      <a href="mailto:doaae987@gmail.com">
+        <i class="fas fa-envelope icon"></i>doaae987@gmail.com
+      </a>
+      <a href="https://linkedin.com/in/doaa-ebrahim-19b4751ba" target="_blank">
+        <i class="fab fa-linkedin icon"></i>LinkedIn
+      </a>
+      <a href="https://github.com/d088" target="_blank">
+        <i class="fab fa-github icon"></i>GitHub
+      </a>
+    </div>
+    <div class="footer-copy">
+      &copy; 2024 Doaa Ebrahim. All rights reserved.
+    </div>
   </footer>
 
-  <!-- Load Particles.js from CDN -->
-<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-<script>
-  particlesJS("particles-js", {
-    particles: {
-      number: { value: 50 },
-      color: { value: "#1e40af" },
-      shape: { type: "circle" },
-      opacity: { value: 0.4 },
-      size: { value: 3 },
-      line_linked: {
-        enable: true,
-        distance: 150,
-        color: "#1e40af",
-        opacity: 0.4,
-        width: 1
-      },
-      move: {
-        enable: true,
-        speed: 2
-      }
-    },
-    interactivity: {
-      events: {
-        onhover: { enable: true, mode: "grab" },
-        onclick: { enable: true, mode: "push" }
-      },
-      modes: {
-        grab: { distance: 140, line_linked: { opacity: 1 } },
-        push: { particles_nb: 4 }
-      }
-    },
-    retina_detect: true
-  });
-</script>
-
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>AOS.init();</script>
 </body>
 </html>

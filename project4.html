@@ -3,134 +3,114 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Google Store Cleaning & EDA – Jupter Notebook</title>
-  <link rel="stylesheet" href="projects.css" />
+  <title>Google Store Cleaning & EDA – Jupyter Notebook</title>
+  <link rel="stylesheet" href="projects (1).css" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
   <script src="script.js" defer></script>
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-<div id="particles-js"></div>
-  
   <!-- Header -->
-  <header>
-    <h1>Google Store Cleaning & EDA</h1>
-    <p>Performed data cleaning and exploratory data analysis to transform raw data into
-    meaningful insights using Python and visualization libraries</p>
-    <a href="index.html" class="cv-button" style="margin-top: 1rem; display: inline-block; color: azure;">
-      <i class="fas fa-arrow-left"></i> Back to Portfolio
-    </a>
+  <header class="project-header enhanced-header">
+    <div class="header-bg"></div>
+    <div class="header-content">
+      <a href="index.html" class="cv-button back-btn">
+        <i class="fas fa-arrow-left"></i> Back to Portfolio
+      </a>
+      <i class="fas fa-database header-icon"></i>
+      <h1>Google Store Cleaning & EDA</h1>
+      <p class="subtitle">
+        Data cleaning and exploratory data analysis on Google Play Store apps using Python
+      </p>
+    </div>
   </header>
 
-
-
   <!-- Container -->
-  <section class="container">
+  <section class="container enhanced-project-container">
 
-    <!-- Embedded Power BI Dashboard -->
-    <div class="project-frame">
-      <iframe title="Data Cleaning & EDA"
-        src="DataCleaning&EDA.html"
-        frameborder="0" allowFullScreen="true">
-      </iframe>
+    <!-- Embedded Notebook -->
+    <div class="project-frame enhanced-frame" data-aos="zoom-in">
+      <iframe title="Data Cleaning & EDA" width="1110" height="541.25"  
+      src="DataCleaning&EDA.html" frameborder="0" allowfullscreen="true"></iframe>
     </div>
-  <div class="fixed-icons">
-  <a href="https://linkedin.com/in/doaa-ebrahim-19b4751ba" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-  <a href="https://github.com/d088" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-  <a href="mailto:doaae987@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
-  </div>
+
+    <!-- Floating Social Icons -->
+    <div class="fixed-icons enhanced-fixed-icons">
+      <a href="https://linkedin.com/in/doaa-ebrahim-19b4751ba" target="_blank" title="LinkedIn" class="sticker bounce">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://github.com/d088" target="_blank" title="GitHub" class="sticker wiggle">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="mailto:doaae987@gmail.com" title="Email" class="sticker bounce">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </div>
 
     <!-- Project Description -->
-    <div class="project-details">
-      <h2>Project Overview</h2>
-     <p>
-    Analyzed a dataset of 10,000+ Android apps to clean inconsistencies and derive insights from Google Play Store.
-    Explored trends in categories, installs, ratings, and pricing models using Python and visualization libraries.
-    </p>
-    <h2>About The dataset:</h2>
-      <ul>
+    <div class="project-details enhanced-details" data-aos="fade-up">
+      <h2><i class="fas fa-lightbulb"></i> Project Overview</h2>
+      <p>
+        Analyzed 10,000+ Android apps to clean inconsistencies and derive insights from Google Play Store data. Explored trends in categories, installs, ratings, and pricing models using Python and visualization libraries.
+      </p>
+
+      <h2><i class="fas fa-database"></i> About the Dataset</h2>
+      <ul class="recommendations-list">
         <li>Source: Kaggle – Google Play Store Data</li>
         <li>Total Rows: ~10,000</li>
-        <li>Challenges: Missing values, inconsistent formatting (e.g. “1,000+” installs), incorrect types (object instead of numeric)</li>
-        <a href="https://www.kaggle.com/datasets/yassershrief/goggle-play-data" target="_blank">🔗 View the Dataset</a>
+        <li>Challenges: Missing values, inconsistent formats (e.g., “1,000+” installs), and incorrect types</li>
+        <li><a href="https://www.kaggle.com/datasets/yassershrief/goggle-play-data" target="_blank">🔗 View Dataset</a></li>
       </ul>
 
       <div class="tip">
-         <p><strong>Used Tools:</strong> Python, Pandas, Seaborn, Matplotlib, Jupter</p>
+        <p><strong>Tools Used:</strong> Python, Pandas, Seaborn, Matplotlib, Jupyter</p>
       </div>
 
-      <h2>Key Insights & Findings</h2>
-      <ul>
-        <li><strong>Top Categories:</strong></li>
-        <i>Family, Game, and Tools are the most common app categories.</li>
-        <li><strong>Most Installed:</strong></li>
-        <i> Apps in the Communication, Social, and Entertainment categories have the highest average number of installs.</li>
-        <li><strong>Free Apps:</strong></li>
-        <i> Over 90% of apps on the Play Store are free. Paid apps are mostly utilities or productivity tools.</li>
-        <li><strong>Ratings:</strong></li>
-        <i>Most apps are rated between 4.0 and 4.5, with very few rated below 3.0.</li>
-        <li><strong>Correlation Analysis:</strong></li>
-        <i>Number of reviews and installs are strongly positively correlated</li>
-          <i>App size has no clear impact on app ratings</i>
-      </ul>
-      <ul>
-      <a href="https://github.com/d088/GooglePalyStore_Apps/tree/main" target="_blank">🔗 More about the Project visit GitHub</a></ul>
+      <h2><i class="fas fa-chart-line"></i> Key Insights</h2>
+      <div class="insights-grid">
+        <div class="insight-card"><strong>Top Categories:</strong><br><span class="insight-note">Family, Game, Tools dominate</span></div>
+        <div class="insight-card"><strong>Most Installed:</strong><br><span class="insight-note">Communication, Social, Entertainment apps</span></div>
+        <div class="insight-card"><strong>Free Apps:</strong><br><span class="insight-note">90% of apps are free; paid mostly utility tools</span></div>
+        <div class="insight-card"><strong>Ratings:</strong><br><span class="insight-note">Most rated 4.0–4.5 stars, few below 3.0</span></div>
+        <div class="insight-card"><strong>Correlation:</strong><br><span class="insight-note">Reviews correlate with installs; size vs rating weak</span></div>
       </div>
-    <!-- Related Projects -->
-    <div class="project-details" style="margin-top: 3rem;">
-      <h2>You Can Also See</h2>
-      <ul>
-        <li><a href="project1.html"><i class="fas fa-chart-line"></i> YouTube Dashboard </a></li>
-        <li><a href="project2.html"><i class="fas fa-chart-line"></i> Adventure Works Dashboard – Power BI</a></li>
-        <li><a href="project3.html"><i class="fas fa-user-check"></i> super Store Analysis– Tableau</a></li>
-        <li><a href="project5.html"><i class="fas fa-code"></i> Car Price Prediction using ML – Python Notebook</a></li>
+
+      <ul class="recommendations-list" style="margin-top: 1rem;">
+        <li><a href="https://github.com/d088/GooglePalyStore_Apps/tree/main" target="_blank">🔗 View Project on GitHub</a></li>
       </ul>
     </div>
 
+    <!-- Related Projects -->
+    <div class="project-details enhanced-details" style="margin-top: 3rem;" data-aos="fade-up">
+      <h2><i class="fas fa-link"></i> You Can Also See</h2>
+      <ul class="related-projects-list">
+        <li><a href="project1.html"><i class="fas fa-chart-line"></i> YouTube Dashboard</a></li>
+        <li><a href="project2.html"><i class="fas fa-user-check"></i> Adventure Works Dashboard – Power BI</a></li>
+        <li><a href="project3.html"><i class="fas fa-chart-bar"></i> Super Store Analysis – Tableau</a></li>
+        <li><a href="project5.html"><i class="fas fa-car"></i> Car Price Prediction using ML – Python Notebook</a></li>
+      </ul>
+    </div>
   </section>
 
-  <!-- Footer with Contacts -->
-  <footer>
-    <p><i class="fas fa-envelope icon"></i> <a href="mailto:doaae987@gmail.com">doaae987@gmail.com</a></p>
-    <p><i class="fab fa-linkedin icon"></i> <a href="https://linkedin.com/in/doaa-ebrahim-19b4751ba">LinkedIn</a></p>
-    <p><i class="fab fa-github icon"></i> <a href="https://github.com/d088">GitHub</a></p>
+  <!-- Footer -->
+  <footer class="enhanced-footer">
+    <div class="footer-links">
+      <a href="mailto:doaae987@gmail.com">
+        <i class="fas fa-envelope icon"></i>doaae987@gmail.com
+      </a>
+      <a href="https://linkedin.com/in/doaa-ebrahim-19b4751ba" target="_blank">
+        <i class="fab fa-linkedin icon"></i>LinkedIn
+      </a>
+      <a href="https://github.com/d088" target="_blank">
+        <i class="fab fa-github icon"></i>GitHub
+      </a>
+    </div>
+    <div class="footer-copy">
+      &copy; 2024 Doaa Ebrahim. All rights reserved.
+    </div>
   </footer>
 
-  <!-- Load Particles.js from CDN -->
-<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-<script>
-  particlesJS("particles-js", {
-    particles: {
-      number: { value: 50 },
-      color: { value: "#1e40af" },
-      shape: { type: "circle" },
-      opacity: { value: 0.4 },
-      size: { value: 3 },
-      line_linked: {
-        enable: true,
-        distance: 150,
-        color: "#1e40af",
-        opacity: 0.4,
-        width: 1
-      },
-      move: {
-        enable: true,
-        speed: 2
-      }
-    },
-    interactivity: {
-      events: {
-        onhover: { enable: true, mode: "grab" },
-        onclick: { enable: true, mode: "push" }
-      },
-      modes: {
-        grab: { distance: 140, line_linked: { opacity: 1 } },
-        push: { particles_nb: 4 }
-      }
-    },
-    retina_detect: true
-  });
-</script>
-
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>AOS.init();</script>
 </body>
 </html>

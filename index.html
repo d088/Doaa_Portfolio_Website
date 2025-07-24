@@ -17,16 +17,23 @@
   <span></span>
 </div>
 
-  <nav>
-    <ul>
-      <li><a href="#about"><i class="fas fa-user icon"></i>About</a></li>
-      <li><a href="#education & experience"><i class="fas fa-graduation-cap icon"></i>Education & Experience</a></li>
-      <li><a href="#courses"><i class="fas fa-certificate icon"></i>Courses</a></li>
-      <li><a href="#projects"><i class="fas fa-chart-line icon"></i>Projects</a></li>
-      <li><a href="#skills"><i class="fas fa-tools icon"></i>Skills</a></li>
-    </ul>
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="#" class="navbar-logo">
+        <i class="fas fa-database"></i> Doaa Ibrahim
+      </a>
+      <ul class="navbar-menu">
+        <li><a href="#about"><i class="fas fa-user icon"></i><span>About</span></a></li>
+        <li><a href="#education & experience"><i class="fas fa-graduation-cap icon"></i><span>Education & Experience</span></a></li>
+        <li><a href="#courses"><i class="fas fa-certificate icon"></i><span>Courses</span></a></li>
+        <li><a href="#projects"><i class="fas fa-chart-line icon"></i><span>Projects</span></a></li>
+        <li><a href="#learning-journey"><i class="fas fa-road icon"></i><span>Learning Journey</span></a></li>
+        <li><a href="#Skills"><i class="fas fa-tools icon"></i><span>Skills</span></a></li>
+        
+      </ul>
+    </div>
   </nav>
-
+ 
 <div class="fixed-icons">
   <a href="https://linkedin.com/in/doaa-ebrahim-19b4751ba" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
   <a href="https://github.com/d088" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
@@ -34,236 +41,484 @@
   <a href="https://wa.me/qr/NFB2DMQ2JNEIN1 " title="WhatsApp"><i class="fab fa-globe"></i> </a>
 </div>
 
-  <section id="about" class="fade-in">
-   
-    <div id="particles-js"></div>
-    <div class="container about-flex">
-      <div class="about-info">
-          <h1>Doaa Ibrahim Mohamed</h1>
-          <p>I’m a data analyst specializing in Power BI, Python, and Excel. I love turning data into meaningful insights through dashboards and storytelling, dashboards, and automation. My focus is helping businesses make informed, data-driven decisions.</p>
-          <a href="https://drive.google.com/file/d/1hLT4PlHgJl_z28e0jdrpB7_auYgIP9hV/view?usp=sharing" target="_blank" class="cv-button">
-              <i class="fas fa-search"></i> View CV
-          </a>
+<section id="about" class="fade-in">
+  <div class="container about-advanced">
+    <div class="about-left">
+      <div class="about-badge">
+        <i class="fas fa-database"></i>
+        <span>Data Analyst</span>
       </div>
-      <div class="content container about-photo">
+      <h1 class="about-title">
+        Doaa Ibrahim Mohamed
+      </h1>
+      <p class="about-subtitle">
+        <strong>Turning data into actionable insights.</strong><br>
+        I specialize in <span class="highlight-pbi">Power BI</span>, <span class="highlight-python">Python</span>, and <span class="highlight-excel">Excel</span> to build interactive dashboards, automate reporting, and uncover trends that drive business growth.<br>
+        <span class="about-icon"><i class="fas fa-lightbulb"></i></span> Passionate about <b>data storytelling</b>, <b>automation</b>, and <b>business intelligence</b>.
+      </p>
+      <ul class="about-skills">
+        <li><i class="fas fa-chart-bar"></i> Dashboard Design</li>
+        <li><i class="fas fa-robot"></i> Data Automation</li>
+        <li><i class="fas fa-database"></i> Data Modeling</li>
+        <li><i class="fas fa-brain"></i> Machine Learning</li>
+      </ul>
+      <div class="about-actions">
+        <a href="https://drive.google.com/file/d/1hLT4PlHgJl_z28e0jdrpB7_auYgIP9hV/view?usp=sharing" target="_blank" class="cv-button">
+          <i class="fas fa-file-alt"></i> View CV
+        </a>
+      </div>
+    </div>
+    <div class="about-right">
+      <div class="about-photo-wrapper">
         <img src="profile-photo.jpg" alt="Doaa Ibrahim Mohamed" class="profile-photo" />
+        <span class="about-status"><i class="fas fa-circle"></i> Available</span>
       </div>
+      <div class="about-gradient-bg"></div>
     </div>
-  </section>
-  
+  </div>
+</section>
 
-  <section id="education & experience" class="fade-in">
+<!-- Education & Experience -->
+<section id="education-experience" class="fade-in">
   <div class="container education-section">
-    <h2>Education</h2>
-    <div class="education-card">
-      <h3>B.Sc. in Computers & Artificial Intelligence</h3>
-      <p class="edu-dates">Sep 2019 – Jul 2023 | GPA 3.08 (Very Good)</p>
-      <p class="edu-project"><strong>Graduation Project:</strong> Sickle Cell Anemia Detection using CNN – <em>Excellent (A+)</em></p>
+    <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+    <div class="education-card advanced-card" data-aos="fade-right">
+      <div class="edu-header">
+        <h3>B.Sc. in Computers & Artificial Intelligence</h3>
+        <span class="edu-institute"><i class="fas fa-university"></i> Fayoum University</span>
+      </div>
+      <div class="edu-meta">
+        <span class="edu-dates"><i class="fas fa-calendar-alt"></i> Sep 2019 – Jul 2023</span>
+        <span class="edu-gpa"><i class="fas fa-star"></i> GPA: 3.08 (Very Good)</span>
+      </div>
+      <div class="edu-project">
+        <strong>Graduation Project:</strong>
+        <span>Sickle Cell Anemia Detection using <b>CNN</b> – <em>Excellent (A+)</em></span>
+        <ul class="edu-project-details">
+          <p><i class="fas fa-microscope"></i> Developed a deep learning model (CNN) for medical image classification.</p>
+          <p><i class="fas fa-chart-line"></i> Achieved 96% accuracy on test data.</p>
+          <p><i class="fas fa-users"></i> Collaborated with a multidisciplinary team of 4.</p>
+        </ul>
+      </div>
+      <div class="edu-skills">
+        <span class="badge">Python</span>
+        <span class="badge">TensorFlow</span>
+        <span class="badge">Keras</span>
+        <span class="badge">Medical Imaging</span>
+      </div>
     </div>
-
-    <h2>Experience</h2>
-    <div class="experience-list">
-      <div class="experience-card">
-        <h4>Freelance BI Analyst</h4>
-        <span class="exp-date">Remote • Apr 2025</span>
-        <p>Cleaned and transformed sales data using Power Query and Excel, ensuring data integrity and consistency across 12,000+ rows.</p>
-        <p>Built sales performance dashboards with Power BI & Excel.</p>
-        <p>Reduced manual reporting time by 70% and enabled the client to make data-driven inventory decisions.</p>
+   
+    <h2 style="margin-top:2.5rem;"><i class="fas fa-briefcase"></i> Experience</h2>
+    <div class="experience-list styled-experience-list">
+      <div class="experience-card styled-experience-card" data-aos="fade-up">
+        <div class="exp-header">
+          <h4>Freelance BI Analyst</h4>
+          <span class="exp-date"><i class="fas fa-calendar-alt"></i> Remote • Apr 2025 – Present</span>
+        </div>
+        <ul class="exp-details">
+          <p><i class="fas fa-database"></i> Automated ETL pipelines using Power Query and Excel for datasets exceeding 12,000 rows.</p>
+          <p><i class="fas fa-chart-bar"></i> Designed and deployed interactive sales dashboards in Power BI, enabling real-time business insights.</p>
+          <p><i class="fas fa-bolt"></i> Reduced manual reporting time by 70% and empowered data-driven inventory decisions.</p>
+          <p><i class="fas fa-cogs"></i> Integrated advanced DAX calculations for forecasting and trend analysis.</p>
+        </ul>
+        <div class="exp-skills">
+          <span class="badge">Power BI</span>
+          <span class="badge">Excel</span>
+          <span class="badge">ETL</span>
+          <span class="badge">DAX</span>
+        </div>
       </div>
-      <div class="experience-card">
-        <h4>Power BI Development – Code Camp</h4>
-        <span class="exp-date">ITI Fayoum • Nov 2024 – Mar 2025</span>
-        <p>Advanced skills in SQL, Power BI & statistics.</p>
-        <p>Acquired and honed advanced skills in database management.</p>
-        <p>Utilized Python for data cleaning, processing, and predictive modeling.</p>
+      <div class="experience-card styled-experience-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="exp-header">
+          <h4>Power BI Developer – Code Camp</h4>
+          <span class="exp-date"><i class="fas fa-calendar-alt"></i> ITI Fayoum • Nov 2024 – Mar 2025</span>
+        </div>
+        <ul class="exp-details">
+          <p><i class="fas fa-database"></i> Mastered advanced SQL, Power BI, and statistical analysis for business intelligence solutions.</p>
+          <p><i class="fas fa-database"></i> Engineered robust data models and optimized data flows for scalable reporting.</p>
+          <p><i class="fas fa-code"></i> Leveraged Python for data cleaning, feature engineering, and predictive analytics.</p>
+          <p><i class="fas fa-users"></i> Led workshops on dashboard design and data visualization best practices.</p>
+        </ul>
+        <div class="exp-skills">
+          <span class="badge">SQL</span>
+          <span class="badge">Power BI</span>
+          <span class="badge">Python</span>
+          <span class="badge">Data Modeling</span>
+        </div>
       </div>
-      <div class="experience-card">
-        <h4>Data Scientist</h4>
-        <span class="exp-date">DEPI Cairo • Apr 2024 – Oct 2024</span>
-        <p>Cleaned, processed, and analyzed data using statistical methods and machine learning techniques</p>
-        <p>Developed predictive models for market analysis, operational behavior analysis, and performance improvement</p>
+      <div class="experience-card styled-experience-card" data-aos="fade-up" data-aos-delay="200">
+        <div class="exp-header">
+          <h4>Data Scientist</h4>
+          <span class="exp-date"><i class="fas fa-calendar-alt"></i> DEPI Cairo • Apr 2024 – Oct 2024</span>
+        </div>
+        <ul class="exp-details">
+          <p><i class="fas fa-broom"></i> Cleaned, processed, and analyzed large datasets using advanced statistical and machine learning techniques.</p
+          <p><i class="fas fa-brain"></i> Developed predictive models for market analysis, operational behavior, and performance optimization.</p>
+          <p><i class="fas fa-chart-pie"></i> Delivered actionable insights through interactive dashboards and automated reports.</p>
+          <p><i class="fas fa-lightbulb"></i> Presented findings to stakeholders, driving data-driven decision making.</p>
+        </ul>
+        <div class="exp-skills">
+          <span class="badge">Machine Learning</span>
+          <span class="badge">Python</span>
+          <span class="badge">Data Visualization</span>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- courses -->
-  <section id="courses" class="fade-in">
-    <div class="container">
-      <h2>Courses</h2>
-      <div class="courses-grid">
+<!-- Courses Section -->
+<section id="courses" class="fade-in">
+  <div class="container courses-container">
+    <h2 class="courses-title">
+      <i class="fas fa-certificate"></i> Courses
+    </h2>
+    <div class="courses-carousel">
+      <button class="carousel-btn prev" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>
+      <div class="carousel-track">
         <div class="course-card">
-          <img src="certificates/Mathmatics.png"/>
-          <a href="https://drive.google.com/file/d/1q9w5d2WRUhhx4eeo28w01Z1kC-RwsoeU/view?usp=sharing">
-            <i class="fas fa-square-root-alt icon"></i> Mathematics – 365 Data Science</a>
+          <img src="certificates/Mathmatics.png" alt="Mathematics Certificate" />
+          <a href="https://drive.google.com/file/d/1q9w5d2WRUhhx4eeo28w01Z1kC-RwsoeU/view?usp=sharing" target="_blank">
+            <i class="fas fa-square-root-alt icon"></i> Mathematics – 365 Data Science
+          </a>
+        </div>
+        <div class="course-card">
+          <img src="certificates/Power BI.png" alt="Power BI Certificate" />
+          <a href="https://drive.google.com/file/d/19Zpip7r4-wB0YD8xFBZ5Bv6ZLuoQA6SD/view?usp=sharing" target="_blank">
+            <i class="fas fa-chart-line icon"></i> Power BI – 365 Data Science
+          </a>
+        </div>
+        <div class="course-card">
+          <img src="certificates/Data Analysis With Chat GPT.png" alt="Data Analysis with ChatGPT Certificate" />
+          <a href="https://drive.google.com/file/d/1E4maKU1VH35PsgrlhdMEVxc5sjxv-kFy/view?usp=sharing" target="_blank">
+            <i class="fas fa-chart-line icon"></i> Data Analysis with ChatGPT – 365 Data Science
+          </a>
+        </div>
+        <div class="course-card">
+          <img src="certificates/Intro to Data and Data Science.png" alt="Intro to Data Science Certificate" />
+          <a href="https://drive.google.com/file/d/1S8-lOKtft03Q5_OR5aVQcPUzI7VbnDbg/view?usp=sharing" target="_blank">
+            <i class="fas fa-chart-bar icon"></i> Introduction to Data and Data Science – 365 Data Science
+          </a>
+        </div>
+        <div class="course-card">
+          <img src="certificates/data manipulation in sql.png" alt="Data Manipulation in SQL Certificate" />
+          <a href="https://drive.google.com/file/d/1Hez7mszT6Ujy4tiZ4h0ry_yMAMVNxWWe/view?usp=sharing" target="_blank">
+            <i class="fas fa-database icon"></i> Data Manipulation in SQL – Datacamp
+          </a>
+        </div>
+        <div class="course-card">
+          <img src="certificates/data freelance.jpg" alt="Data Analysis for Freelancers Certificate" />
+          <a href="https://drive.google.com/file/d/1vnowQ2MCbYYJr60b8ITo_xwV_vu5dzbB/view?usp=sharing" target="_blank">
+            <i class="fas fa-briefcase icon"></i> Data Analysis for Freelancers – NTI
+          </a>
+        </div>
+        <div class="course-card">
+          <img src="certificates/Python for Data Analysis.png" alt="Python for Data Analysis Certificate" />
+          <a href="https://drive.google.com/file/d/1IchuaSet4plOWQPOkXw5DHcS2UwRt0lN/view?usp=sharing" target="_blank">
+            <i class="fas fa-code icon"></i> Python for Data Analysis – NTI
+          </a>
+        </div>
+        <div class="course-card">
+          <img src="certificates/exel fundamentals.png" alt="Excel Fundamentals Certificate" />
+          <a href="https://drive.google.com/file/d/1GvlCQNWTRljPo-QSRzT5jEPdiuFSHqPs/view?usp=sharing" target="_blank">
+            <i class="fas fa-table icon"></i> Excel Fundamentals – Coursera
+          </a>
+        </div>
+        <div class="course-card">
+          <img src="certificates/database fundmentals.png" alt="Database Fundamentals Certificate" />
+          <a href="https://drive.google.com/file/d/1FKr4c3uzuilaa26Koztj0udIY9bILoFw/view?usp=sharing" target="_blank">
+            <i class="fas fa-database icon"></i> Database Fundamentals – Mahara-tech
+          </a>
+        </div>
+        <div class="course-card">
+          <img src="certificates/freelacing.png" alt="Freelancing Basics Certificate"/>
+          <a href="https://drive.google.com/file/d/1JtCm_KuZHj8yXkbVV3sXIn5kefpr1WpC/view?usp=sharing" target="_blank">
+            <i class="fas fa-globe icon"></i> Freelancing Basics – Mahara-tech
+          </a>
+        </div>
+        <div class="course-card">
+          <img src="certificates/Depi_cert.png" alt="Depi Certificate"/>
+          <a href="https://drive.google.com/file/d/1qkZdLETXxBoc0jKn8v240W0gIKPjcGP_/view?usp=sharing" target="_blank">
+            <i class="fas fa-certificate icon"></i> DEPI Data Science – DEPI Cairo
+          </a>
+        </div>
+        <div class="course-card">
+          <img src="certificates/english track.png" alt="English Track Certificate"/>
+          <a href="https://drive.google.com/file/d/1WEFFWimPk0_fBFgFpD2LhXztuLMKD1An/view?usp=sharing" target="_blank">
+            <i class="fas fa-language icon"></i> English Track – Mahara-tech
+          </a>
+        </div>
+      </div>
+      <button class="carousel-btn next" aria-label="Next"><i class="fas fa-chevron-right"></i></button>
+    </div>
+  </div>
+  <script>
+    // Simple carousel logic
+    (function() {
+      const track = document.querySelector('.carousel-track');
+      const prevBtn = document.querySelector('.carousel-btn.prev');
+      const nextBtn = document.querySelector('.carousel-btn.next');
+      const cards = document.querySelectorAll('.course-card');
+      let currentIndex = 0;
+      let cardsPerView = 3;
+
+      function updateCardsPerView() {
+        if (window.innerWidth < 600) {
+          cardsPerView = 1;
+        } else if (window.innerWidth < 900) {
+          cardsPerView = 2;
+        } else  {
+        cardsPerView = 3;
+        }
+    }
+
+      function updateCarousel() {
+        const cardWidth = cards[0].offsetWidth + 30; // 32px gap
+        track.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+      }
+
+      prevBtn.addEventListener('click', () => {
+        if (currentIndex > 0) {
+          currentIndex--;
+          updateCarousel();
+        }
+      });
+
+      nextBtn.addEventListener('click', () => {
+        if (currentIndex < cards.length - cardsPerView) {
+          currentIndex++;
+          updateCarousel();
+        }
+      });
+
+      window.addEventListener('resize', () => {
+        updateCardsPerView();
+        if (currentIndex > cards.length - cardsPerView) {
+          currentIndex = Math.max(0, cards.length - cardsPerView);
+        }
+        updateCarousel();
+      });
+
+      // Initialize
+      updateCardsPerView();
+      updateCarousel();
+    })();
+  </script>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="fade-in modern-projects-section">
+  <div class="container">
+    <h2><i class="fas fa-project-diagram"></i> Featured Projects</h2>
+    <div class="modern-projects-grid">
+      <div class="modern-project-card" data-aos="fade-up">
+        <img class="project-image" src="youtubeStart.png" alt="YouTube Analysis Dashboard" />
+        <div class="project-content">
+          <h3>YouTube Channel Analytics Dashboard</h3>
+          <div class="project-desc">
+            Interactive Power BI dashboard visualizing channel growth, engagement, and content performance for actionable YouTube strategy.
           </div>
-        <div class="course-card">
-          <img src="certificates/Power BI.png"/>
-          <a href="https://drive.google.com/file/d/19Zpip7r4-wB0YD8xFBZ5Bv6ZLuoQA6SD/view?usp=sharing">
-          <i class="fas fa-chart-pie icon"></i> Power BI – 365 Data Science</a>
+          <div class="project-tags">
+            <span class="project-tag">Power BI</span>
+            <span class="project-tag">Data Visualization</span>
+            <span class="project-tag">YouTube API</span>
+          </div>
+          <div class="project-links">
+            <a href="project1.html" class="project-link"><i class="fas fa-arrow-right"></i> Details</a>
+          </div>
         </div>
-        <div class="course-card">
-          <img src="certificates/Data Analysis With Chat GPT.png"/>
-          <a href="https://drive.google.com/file/d/1E4maKU1VH35PsgrlhdMEVxc5sjxv-kFy/view?usp=sharing">
-          <i class="fas fa-chart-line icon"></i> Data Analysis with ChatGPT – 365 Data Science</a></div>
-        <div class="course-card">
-          <img src="certificates/Intro to Data and Data Science.png"/>
-          <a href="https://drive.google.com/file/d/1S8-lOKtft03Q5_OR5aVQcPUzI7VbnDbg/view?usp=sharing">
-          <i class="fas fa-chart-bar icon"></i> Introduction to Data and Data Science – 365 Data Science</a></div>
-        <div class="course-card">
-          <img src="certificates/data manipulation in sql.png"/>
-          <a href="https://drive.google.com/file/d/1Hez7mszT6Ujy4tiZ4h0ry_yMAMVNxWWe/view?usp=sharing">
-          <i class="fas fa-comments icon"></i> Data Manipulation in SQL – Datacamp</a></div>
-          <div class="course-card">
-          <img src="certificates/data freelance.jpg"/>
-          <a href="https://drive.google.com/file/d/1vnowQ2MCbYYJr60b8ITo_xwV_vu5dzbB/view?usp=sharing">
-          <i class="fas fa-briefcase icon"></i> Data Analysis for Freelancers – NTI</a></div>
-        <div class="course-card">
-          <img src="certificates/Python for Data Analysis.png"/>
-          <a href="https://drive.google.com/file/d/1IchuaSet4plOWQPOkXw5DHcS2UwRt0lN/view?usp=sharing">
-          <i class="fas fa-code icon"></i> Python for Data Analysis – NTI</a></div>
-        <div class="course-card">
-          <img src="certificates//exel fundamentals.png"/>
-          <a href="https://drive.google.com/file/d/1GvlCQNWTRljPo-QSRzT5jEPdiuFSHqPs/view?usp=sharing">
-          <i class="fas fa-table icon"></i> Excel Fundamentals – Coursera</a></div>
-        <div class="course-card">
-          <img src="certificates/database fundmentals.png"/>
-          <a href="https://drive.google.com/file/d/1FKr4c3uzuilaa26Koztj0udIY9bILoFw/view?usp=sharing">
-          <i class="fas fa-database icon"></i> Database Fundamentals – Mahara-tech</a></div>
-        <div class="course-card">
-          <img src="certificates/freelacing.png"/>
-          <a href="https://drive.google.com/file/d/1JtCm_KuZHj8yXkbVV3sXIn5kefpr1WpC/view?usp=sharing">
-          <i class="fas fa-globe icon"></i> Freelancing Basics – Mahara-tech</a></div>
-        <div class="course-card">
-          <img src="certificates/Depi_cert.png"/>
-          <a href="https://drive.google.com/file/d/1qkZdLETXxBoc0jKn8v240W0gIKPjcGP_/view?usp=sharing">
-          <i class="fas fa-certificate icon"></i> Freelancing Basics – Mahara-tech</a></div>
-        <div class="course-card">
-          <img src="certificates/english track.png"/>
-          <a href="https://drive.google.com/file/d/1WEFFWimPk0_fBFgFpD2LhXztuLMKD1An/view?usp=sharing">
-          <i class="fas fa-certificate icon"></i> Freelancing Basics – Mahara-tech</a></div>
       </div>
-    </div>
-  </section>
-
-  <section id="projects" class="fade-in">
-    <div class="container">
-      <h2>Projects</h2>
-      <div class="projects-grid">
-        <div class="project-card">
-          <img src="youtubeStart.png" alt="YouTube Analysis Dashboard" />
-          <h3>YouTube Analysis</h3>
-          <a href="project1.html"><i class="fas fa-arrow-right"></i> View Details</a>
+      <div class="modern-project-card" data-aos="fade-up" data-aos-delay="100">
+        <img class="project-image" src="adventureCustomers.png" alt="Adventure Works2022 Dashboard" />
+        <div class="project-content">
+          <h3>Adventure Works Sales Dashboard</h3>
+          <div class="project-desc">
+            End-to-end BI solution for Adventure Works2022: ETL, data modeling, and dynamic dashboards for sales, customers, and product insights.
+          </div>
+          <div class="project-tags">
+            <span class="project-tag">Power BI</span>
+            <span class="project-tag">ETL</span>
+            <span class="project-tag">DAX</span>
+          </div>
+          <div class="project-links">
+            <a href="project2.html" class="project-link"><i class="fas fa-arrow-right"></i> Details</a>
+          </div>
         </div>
-        <div class="project-card">
-          <img src="adventureCustomers.png" alt="Adventure Works2022 Dashboard" />
-          <h3>Adventure Works2022 Dashboard Analysis</h3>
-          <a href="project2.html"><i class="fas fa-arrow-right"></i> View Details</a>
-        </div>
-        <div class="project-card">
-          <img src="superstore1.png" alt="Super Store Dashboard" />
+      </div>
+      <div class="modern-project-card" data-aos="fade-up" data-aos-delay="200">
+        <img class="project-image" src="superstore1.png" alt="Super Store Dashboard" />
+        <div class="project-content">
           <h3>Super Store Sales Analysis</h3>
-          <a href="project3.html"><i class="fas fa-arrow-right"></i> View Details</a>
+          <div class="project-desc">
+            Automated reporting and deep-dive analytics for Super Store sales, highlighting trends, outliers, and growth opportunities.
+          </div>
+          <div class="project-tags">
+            <span class="project-tag">Power BI</span>
+            <span class="project-tag">Excel</span>
+            <span class="project-tag">Business Analysis</span>
+          </div>
+          <div class="project-links">
+            <a href="project3.html" class="project-link"><i class="fas fa-arrow-right"></i> Details</a>
+          </div>
         </div>
-        <div class="project-card">
-          <img src="googlestore.png" alt=" Google Store Cleaning & EDA" />
-          <h3>Google Store Cleaning & EDA</h3>
-          <a href="project4.html"><i class="fas fa-arrow-right"></i> View Details</a>
+      </div>
+      <div class="modern-project-card" data-aos="fade-up" data-aos-delay="300">
+        <img class="project-image" src="googlestore.png" alt="Google Store Cleaning & EDA" />
+        <div class="project-content">
+          <h3>Google Play Store Data Cleaning & EDA</h3>
+          <div class="project-desc">
+            Python-powered data cleaning and exploratory analysis of Google Play Store apps, uncovering trends and anomalies.
+          </div>
+          <div class="project-tags">
+            <span class="project-tag">Python</span>
+            <span class="project-tag">EDA</span>
+            <span class="project-tag">Data Cleaning</span>
+          </div>
+          <div class="project-links">
+            <a href="project4.html" class="project-link"><i class="fas fa-arrow-right"></i> Details</a>
+            <a href="https://github.com/d088/google-play-eda" class="project-link" target="_blank"><i class="fab fa-github"></i> Code</a>
+          </div>
         </div>
-        <div class="project-card">
-          <img src="cardash.png" alt="Car Price Prediction using ML" />
-          <h3>Car Price Prediction using ML</h3>
-          <a href="project5.html"><i class="fas fa-arrow-right"></i> View Details</a>
+      </div>
+      <div class="modern-project-card" data-aos="fade-up" data-aos-delay="400">
+        <img class="project-image" src="cardash.png" alt="Car Price Prediction using ML" />
+        <div class="project-content">
+          <h3>Car Price Prediction with Machine Learning</h3>
+          <div class="project-desc">
+            Built and deployed regression models to predict car prices, featuring data preprocessing, feature engineering, and model evaluation.
+          </div>
+          <div class="project-tags">
+            <span class="project-tag">Machine Learning</span>
+            <span class="project-tag">Python</span>
+            <span class="project-tag">Regression</span>
+          </div>
+          <div class="project-links">
+            <a href="project5.html" class="project-link"><i class="fas fa-arrow-right"></i> Details</a>
+            <a href="https://github.com/d088/car-price-ml" class="project-link" target="_blank"><i class="fab fa-github"></i> Code</a>
+          </div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section></div>
 
 
-  <!-- Skills -->
-
-  <section id="skills" class="fade-in">
-    <div class="container">
-      <h2>Skills</h2>
-      <div class="skills-flex">
-        <div class="skills-techniqal">
-          <div class="skills-list">
-            
-        <span><i class="fas fa-database icon"></i>MS SQL Server</span>
-        <span><i class="fas fa-code icon"></i>SQL</span>
-        <span><i class="fas fa-database icon"></i>SSIS</span>
-        <span><i class="fas fa-database icon"></i>SSAS</span>
-        <span><i class="fas fa-database icon"></i>SSRS</span>
-        <span><i class="fas fa-code icon"></i>NoSQL</span>
-        <span><i class="fas fa-project-diagram icon"></i>Data Modelling</span>
-        <span><i class="fas fa-chart-bar icon"></i>Power BI</span>
-        <span><i class="fas fa-file-excel icon"></i>Power Query</span>
-        <span><i class="fas fa-bolt icon"></i>DAX</span>
-        <span><i class="fas fa-table icon"></i>Data Warehouse</span>
-        <span><i class="fas fa-random icon"></i>ETL</span>
-        <span><i class="fas fa-chart-bar icon"></i>Tableau</span>
-        <span><i class="fas fa-file-excel icon"></i>Excel</span>
-        <span><i class="fas fa-code icon"></i>Python</span>
-        <span><i class="fas fa-brain icon"></i>Machine Learning</span>
-        </div></div>
-        <div class="skills-soft">
-          <div class="skills-list">
-        <span><i class="fas fa-users icon"></i>Teamwork</span>
-        <span><i class="fas fa-brain icon"></i>Analytics</span>
-        <span><i class="fas fa-comments icon"></i>Communication</span>
-        <span><i class="fas fa-search icon"></i>Attention to Detail</span>
-        <span><i class="fas fa-clock icon"></i>Time Management</span>
-        <span><i class="fas fa-globe icon"></i>Presentation</span>
-        <span><i class="fas fa-briefcase icon"></i>Adaptability</span>
+<!-- Learning Journey Section -->
+<section id="learning-journey" class="fade-in">
+  <div class="container learning-journey-container">
+    <h2 class="learning-journey-title">
+      <i class="fas fa-road"></i> My Learning Journey
+    </h2>
+    <div class="timeline">
+      <div class="timeline-item" data-aos="fade-right">
+        <div class="timeline-icon"><i class="fas fa-graduation-cap"></i></div>
+        <div class="timeline-content">
+          <span class="timeline-date">2019 – 2023</span>
+          <h3>B.Sc. in Computers & AI</h3>
+          <p>Graduated from Fayoum University, completed a CNN-based medical image classification project, and built a strong foundation in data analysis and programming.</p>
+        </div>
+      </div>
+      <div class="timeline-item" data-aos="fade-left">
+        <div class="timeline-icon"><i class="fas fa-certificate"></i></div>
+        <div class="timeline-content">
+          <span class="timeline-date">2023 – 2024</span>
+          <h3>Certifications & Online Courses</h3>
+          <p>Earned certifications in Power BI, SQL, Python, and Data Science from 365 Data Science, Coursera, and Mahara-tech.</p>
+        </div>
+      </div>
+      <div class="timeline-item" data-aos="fade-right">
+        <div class="timeline-icon"><i class="fas fa-briefcase"></i></div>
+        <div class="timeline-content">
+          <span class="timeline-date">2024</span>
+          <h3>First Freelance BI Project</h3>
+          <p>Automated reporting and built interactive dashboards for a client, applying Power BI and Excel to real business data.</p>
+        </div>
+      </div>
+      <div class="timeline-item" data-aos="fade-left">
+        <div class="timeline-icon"><i class="fas fa-lightbulb"></i></div>
+        <div class="timeline-content">
+          <span class="timeline-date">2025</span>
+          <h3>Continuous Growth</h3>
+          <p>Learning advanced analytics, machine learning, and dashboard storytelling to deliver even more impactful insights.</p>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
+<!-- Skills Section -->
+<section id="skills" class="fade-in">
+  <div class="container">
+    <h2><i class="fas fa-tools"></i> Skills</h2>
+    <div class="skills-flex">
+      <div class="skills-techniqal">
+        <div class="skills-list">
+          <span><i class="fas fa-database icon"></i> MS SQL Server</span>
+          <span><i class="fas fa-code icon"></i> SQL</span>
+          <span><i class="fas fa-database icon"></i> SSIS</span>
+          <span><i class="fas fa-database icon"></i> SSAS</span>
+          <span><i class="fas fa-database icon"></i> SSRS</span>
+          <span><i class="fas fa-code icon"></i> NoSQL</span>
+          <span><i class="fas fa-project-diagram icon"></i> Data Modelling</span>
+          <span><i class="fas fa-chart-bar icon"></i> Power BI</span>
+          <span><i class="fas fa-file-excel icon"></i> Power Query</span>
+          <span><i class="fas fa-bolt icon"></i> DAX</span>
+          <span><i class="fas fa-table icon"></i> Data Warehouse</span>
+          <span><i class="fas fa-random icon"></i> ETL</span>
+          <span><i class="fas fa-chart-bar icon"></i> Tableau</span>
+          <span><i class="fas fa-file-excel icon"></i> Excel</span>
+          <span><i class="fas fa-code icon"></i> Python</span>
+          <span><i class="fas fa-brain icon"></i> Machine Learning</span>
+        </div>
+      </div>
+      <div class="skills-soft">
+        <div class="skills-list">
+          <span><i class="fas fa-users icon"></i> Teamwork</span>
+          <span><i class="fas fa-brain icon"></i> Analytics</span>
+          <span><i class="fas fa-comments icon"></i> Communication</span>
+          <span><i class="fas fa-search icon"></i> Attention to Detail</span>
+          <span><i class="fas fa-clock icon"></i> Time Management</span>
+          <span><i class="fas fa-globe icon"></i> Presentation</span>
+          <span><i class="fas fa-briefcase icon"></i> Adaptability</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Closing Section -->
+<section id="contact-closing" class="fade-in closing-section">
+  <div class="container closing-container">
+    <h2><i class="fas fa-handshake"></i> Let's Connect!</h2>
+    <p>
+      Thank you for visiting my portfolio.<br>
+      If you’d like to collaborate, have questions, or just want to say hello, feel free to reach out!😊
+    </p>
+    <div class="closing-actions">
+      <a href="mailto:doaae987@gmail.com" class="cv-button"><i class="fas fa-envelope"></i> Email Me</a>
+      <a href="https://linkedin.com/in/doaa-ebrahim-19b4751ba" target="_blank" class="cv-button"><i class="fab fa-linkedin"></i> LinkedIn</a>
+      <a href="https://github.com/d088" target="_blank" class="cv-button"><i class="fab fa-github"></i> GitHub</a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer with Contacts -->
+<footer style="background: #222; color: #fff; padding: 2rem 0; text-align: center; margin-top: 3rem; box-shadow: 0 -2px 10px rgba(0,0,0,0.1);">
+  <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; align-items: center;">
+    <a href="mailto:doaae987@gmail.com" style="color: #00bcd4; text-decoration: none; font-size: 1.2rem; transition: color 0.2s;">
+      <i class="fas fa-envelope icon" style="margin-right: 8px;"></i>doaae987@gmail.com
+    </a>
+    <a href="https://linkedin.com/in/doaa-ebrahim-19b4751ba" target="_blank" style="color: #0e76a8; text-decoration: none; font-size: 1.2rem; transition: color 0.2s;">
+      <i class="fab fa-linkedin icon" style="margin-right: 8px;"></i>LinkedIn
+    </a>
+    <a href="https://github.com/d088" target="_blank" style="color: #fff; text-decoration: none; font-size: 1.2rem; transition: color 0.2s;">
+      <i class="fab fa-github icon" style="margin-right: 8px;"></i>GitHub
+    </a>
+  </div>
+  <div style="margin-top: 1rem; font-size: 0.95rem; color: #aaa;">
+    &copy; 2024 Doaa Ebrahim. All rights reserved.
+  </div>
+</footer></div></a></div></footer>
   
-    
-  <!-- Footer with Contacts -->
-  <footer>
-    <p><i class="fas fa-envelope icon"></i> <a href="mailto:doaae987@gmail.com">doaae987@gmail.com</a></p>
-    <p><i class="fas fa-briefcase icon"></i> <a href="https://wa.me/qr/NFB2DMQ2JNEIN1 ">WhatsApp</a></p>
-    <p><i class="fab fa-linkedin icon"></i> <a href="https://linkedin.com/in/doaa-ebrahim-19b4751ba">LinkedIn</a></p>
-    <p><i class="fab fa-github icon"></i> <a href="https://github.com/d088">GitHub</a></p>
-  </footer>
-  <!-- Load Particles.js from CDN -->
-<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-<script>
-  particlesJS("particles-js", {
-    particles: {
-      number: { value: 50 },
-      color: { value: "#1e40af" },
-      shape: { type: "circle" },
-      opacity: { value: 0.4 },
-      size: { value: 3 },
-      line_linked: {
-        enable: true,
-        distance: 150,
-        color: "#1e40af",
-        opacity: 0.4,
-        width: 1
-      },
-      move: {
-        enable: true,
-        speed: 2
-      }
-    },
-    interactivity: {
-      events: {
-        onhover: { enable: true, mode: "grab" },
-        onclick: { enable: true, mode: "push" }
-      },
-      modes: {
-        grab: { distance: 140, line_linked: { opacity: 1 } },
-        push: { particles_nb: 4 }
-      }
-    },
-    retina_detect: true
-  });
-</script>
 
 
 
@@ -273,3 +528,4 @@
 
 </body>
 </html>
+</div></div>

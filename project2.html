@@ -4,141 +4,118 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Adventure Works2022 Analysis – Power BI</title>
-  <link rel="stylesheet" href="projects.css" />
+  <link rel="stylesheet" href="projects (1).css" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
   <script src="script.js" defer></script>
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-<div id="particles-js"></div>
-  
-  <!-- Header -->
-  <header>
-    <h1> Adventure Works2022 Data</h1>
-    <p>Interactive Power BI Dashboard to Unlock Customer & Sales Insights </p>
-    <a href="index.html" class="cv-button" style="margin-top: 1rem; display: inline-block; color: azure;">
-      <i class="fas fa-arrow-left"></i> Back to Portfolio
-    </a>
+  <!--Header-->
+  <header class="project-header enhanced-header">
+    <div class="header-bg"></div>
+    <div class="header-content">
+      <a href="index.html" class="cv-button back-btn">
+        <i class="fas fa-arrow-left"></i> Back to Portfolio
+      </a>
+      <i class="fas fa-database header-icon"></i>
+      <h1>Adventure Works2022 Data Analysis</h1>
+      <p class="subtitle">Interactive Power BI Dashboard to Unlock Customer & Sales Insights</p>
+    </div>
   </header>
 
-
-
   <!-- Container -->
-  <section class="container">
+  <section class="container enhanced-project-container">
 
     <!-- Embedded Power BI Dashboard -->
-    <div class="project-frame">
+    <div class="project-frame enhanced-frame" data-aos="zoom-in">
       <iframe title="Adventure Works2022 Dashboard" width="1140" height="541.25" 
-      src="https://app.powerbi.com/reportEmbed?reportId=339c132b-c3f1-4d3d-9517-cb45b85e8a5e&autoAuth=true&ctid=5f593c84-cad4-46c8-b3de-321c3e829a99" 
-      frameborder="0" allowFullScreen="true"></iframe>
+        src="https://app.powerbi.com/reportEmbed?reportId=339c132b-c3f1-4d3d-9517-cb45b85e8a5e&autoAuth=true&ctid=5f593c84-cad4-46c8-b3de-321c3e829a99" 
+        frameborder="0" allowfullscreen="true"></iframe>
     </div>
-  <div class="fixed-icons">
-  <a href="https://linkedin.com/in/doaa-ebrahim-19b4751ba" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-  <a href="https://github.com/d088" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-  <a href="mailto:doaae987@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
-  </div>
+
+    <!-- Floating Social Icons with Animation and Separation -->
+    <div class="fixed-icons enhanced-fixed-icons">
+      <a href="https://linkedin.com/in/doaa-ebrahim-19b4751ba" target="_blank" title="LinkedIn" class="sticker bounce">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://github.com/d088" target="_blank" title="GitHub" class="sticker wiggle">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="mailto:doaae987@gmail.com" title="Email" class="sticker bounce">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </div>
 
     <!-- Project Description -->
-    <div class="project-details">
-      <h2>Project Overview</h2>
-      <p>This project focuses on analyzing the Adventure Works dataset from Microsoft using "Power BI, leveraging "DAX functions" and "Power Query" to clean, transform, and extract actionable insights. Here's a breakdown of key findings:</p>
-      <p>The dataset includes:</p>
-      <ul>
-        <li>📊 18k+ Customer</li>
-        <li>🎥 2K+ Orders</li>
-        <li>📺 158 Product</li>
-      </ul>
-
-      <div class="tip">
-        🔍 Technical Approach:
-      <ul>
-        <li>Utilized "DAX functions" to calculate "Total Sales" and "Profit"</li>
-        <li>Standardized all currencies to "USD" for consistency.</li>
-        <li>Leveraged "Power Query" for comprehensive "data cleaning and transformation".</li>
-      </ul>
-       
+    <div class="project-details enhanced-details" data-aos="fade-up">
+      <h2><i class="fas fa-lightbulb"></i> Project Overview</h2>
+      <div class="insights-grid">
+        <div class="insight-card"><strong>Customers:</strong> 18k+<br><span class="insight-note">Diverse global base</span></div>
+        <div class="insight-card"><strong>Orders:</strong> 2k+<br><span class="insight-note">Rich sales data</span></div>
+        <div class="insight-card"><strong>Products:</strong> 158<br><span class="insight-note">Wide product range</span></div>
+        <div class="insight-card"><strong>Total Revenue:</strong> $2M<br><span class="insight-note">Strong sales</span></div>
+        <div class="insight-card"><strong>Total Profit:</strong> $868K<br><span class="insight-note">Healthy margins</span></div>
+        <div class="insight-card"><strong>Top Product:</strong> Mountain-200<br><span class="insight-note">$657K+ revenue</span></div>
+        <div class="insight-card"><strong>Top Country:</strong> United States<br><span class="insight-note">1,741 orders</span></div>
       </div>
-
-      <h2>Customer insights:</h2>
-      <ul>
-        <li>18K Total Customers with an "Average Yearly Income" of $57,306 across 6 countries.</li>
-        <li>The 40-60 age group dominates the customer base (~11.8K customers).</li>
-        <li>54.16% of customers are "Single" while 45.84% are "Married".</li>
-        <li>"Commute Distance" impacts customer distribution, with most residing within **0-1 miles (6.3K customers)**</li>
+      <h2><i class="fas fa-cogs"></i> Technical Approach</h2>
+      <ul class="recommendations-list">
+        <li>Utilized <b>DAX functions</b> to calculate Total Sales and Profit</li>
+        <li>Standardized all currencies to <b>USD</b> for consistency</li>
+        <li>Leveraged <b>Power Query</b> for comprehensive data cleaning and transformation</li>
       </ul>
-
-      <h2>Sales & Profit Insights:</h2>
-      <ul>
-        <li>"Total revenue" reached $2M, with a "Total Profit" of $868K</li>
-        <li>"Bikes" represent the largest share of orders (60.45%), followed by "Clothing (24.11%)" and "Accessories (15.44%)".</li>
-        <li>The United States leads in total orders (1,741 orders), followed by Australia (1,150 orders).</li>
+      <h2><i class="fas fa-users"></i> Customer Insights</h2>
+      <ul class="recommendations-list">
+        <li>18K Total Customers with an Average Yearly Income of $57,306 across 6 countries</li>
+        <li>The 40-60 age group dominates the customer base (~11.8K customers)</li>
+        <li>54.16% of customers are Single while 45.84% are Married</li>
+        <li>Commute Distance impacts customer distribution, with most residing within 0-1 miles (6.3K customers)</li>
       </ul>
-    
-    <h2>Top Performing Products:</h2>
-      <ul>
-        <li>"Mountain-200" leads the revenue chart with "$657K+", contributing to 302 total orders.</li>
-        <li>"Road-150" and "Road-250" follow closely, with significant revenue and order volumes.</li>
+      <h2><i class="fas fa-chart-bar"></i> Sales & Profit Insights</h2>
+      <ul class="recommendations-list">
+        <li>Bikes represent the largest share of orders (60.45%), followed by Clothing (24.11%) and Accessories (15.44%)</li>
+        <li>The United States leads in total orders (1,741 orders), followed by Australia (1,150 orders)</li>
       </ul>
-    
-    
+      <h2><i class="fas fa-trophy"></i> Top Performing Products</h2>
+      <ul class="recommendations-list">
+        <li>Mountain-200 leads the revenue chart with $657K+, contributing to 302 total orders</li>
+        <li>Road-150 and Road-250 follow closely, with significant revenue and order volumes</li>
+      </ul>
     </div>
-
 
     <!-- Related Projects -->
-    <div class="project-details" style="margin-top: 3rem;">
-      <h2>You Can Also See</h2>
-      <ul>
-        <li><a href="project1.html"><i class="fas fa-chart-line"></i> YouTube Dashboard </a></li>
-        <li><a href="project3.html"><i class="fas fa-user-check"></i> super Store Analysis– Tableau</a></li>
+    <div class="project-details enhanced-details" style="margin-top: 3rem;" data-aos="fade-up">
+      <h2><i class="fas fa-link"></i> You Can Also See</h2>
+      <ul class="related-projects-list">
+        <li><a href="project1.html"><i class="fas fa-chart-line"></i> YouTube Dashboard</a></li>
+        <li><a href="project3.html"><i class="fas fa-user-check"></i> Super Store Analysis – Tableau</a></li>
         <li><a href="project4.html"><i class="fas fa-code"></i> Google Store Cleaning & EDA – Python Notebook</a></li>
-         <li><a href="project5.html"><i class="fas fa-code"></i> Car Price Prediction using ML – Python Notebook</a></li>
+        <li><a href="project5.html"><i class="fas fa-car"></i> Car Price Prediction using ML – Python Notebook</a></li>
       </ul>
     </div>
-
   </section>
 
   <!-- Footer with Contacts -->
-  <footer>
-    <p><i class="fas fa-envelope icon"></i> <a href="mailto:doaae987@gmail.com">doaae987@gmail.com</a></p>
-    <p><i class="fab fa-linkedin icon"></i> <a href="https://linkedin.com/in/doaa-ebrahim-19b4751ba">LinkedIn</a></p>
-    <p><i class="fab fa-github icon"></i> <a href="https://github.com/d088">GitHub</a></p>
+  <footer class="enhanced-footer">
+    <div class="footer-links">
+      <a href="mailto:doaae987@gmail.com">
+        <i class="fas fa-envelope icon"></i>doaae987@gmail.com
+      </a>
+      <a href="https://linkedin.com/in/doaa-ebrahim-19b4751ba" target="_blank">
+        <i class="fab fa-linkedin icon"></i>LinkedIn
+      </a>
+      <a href="https://github.com/d088" target="_blank">
+        <i class="fab fa-github icon"></i>GitHub
+      </a>
+    </div>
+    <div class="footer-copy">
+      &copy; 2024 Doaa Ebrahim. All rights reserved.
+    </div>
   </footer>
 
-  <!-- Load Particles.js from CDN -->
-<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 <script>
-  particlesJS("particles-js", {
-    particles: {
-      number: { value: 50 },
-      color: { value: "#1e40af" },
-      shape: { type: "circle" },
-      opacity: { value: 0.4 },
-      size: { value: 3 },
-      line_linked: {
-        enable: true,
-        distance: 150,
-        color: "#1e40af",
-        opacity: 0.4,
-        width: 1
-      },
-      move: {
-        enable: true,
-        speed: 2
-      }
-    },
-    interactivity: {
-      events: {
-        onhover: { enable: true, mode: "grab" },
-        onclick: { enable: true, mode: "push" }
-      },
-      modes: {
-        grab: { distance: 140, line_linked: { opacity: 1 } },
-        push: { particles_nb: 4 }
-      }
-    },
-    retina_detect: true
-  });
+  AOS.init();
 </script>
-
 </body>
 </html>

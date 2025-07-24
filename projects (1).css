@@ -1,0 +1,259 @@
+/* Add to your projects (1).css or a dedicated CSS file */
+.enhanced-header {
+  position: relative;
+  background: linear-gradient(90deg, #232526 0%, #414345 100%);
+  color: #fff;
+  padding: 2rem 0 2rem 0;
+  text-align: center;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.15);
+  border-bottom-left-radius: 32px;
+  border-bottom-right-radius: 32px;
+  overflow: hidden;
+  animation: fadeInDown 1s;
+}
+.header-bg {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: url('your-header-bg.svg') center/cover no-repeat;
+  opacity: 0.08;
+  z-index: 0;
+}
+.header-content {
+  position: relative;
+  z-index: 1;
+}
+.header-icon {
+  font-size: 3rem;
+  color: #ff0000;
+  margin-bottom: 0.5rem;
+  display: block;
+  animation: popIn 1.2s;
+}
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-40px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+@keyframes popIn {
+  0% { transform: scale(0.7); opacity: 0;}
+  70% { transform: scale(1.2);}
+  100% { transform: scale(1); opacity: 1;}
+}
+
+.enhanced-header h1 {
+  font-size: 2.7rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+}
+  
+.enhanced-header .subtitle {
+  font-size: 1.25rem;
+  color: #b2ebf2;
+  margin-bottom: 1.5rem;
+}
+.back-btn {
+  position: absolute;
+  left: 2rem;
+  top: 1rem;
+  display: inline-block;
+  color: #fff;
+  background: #00bcd4;
+  padding: 0.7rem 1.5rem;
+  border-radius: 30px;
+  font-weight: 500;
+  box-shadow: 0 2px 8px rgba(0,188,212,0.15);
+  transition: background 0.2s;
+}
+.back-btn:hover {
+  background: #0097a7;
+}
+.header-content {
+  position: relative;
+  padding-top: 2.5rem;
+}
+/* Enhanced Container */
+.enhanced-project-container {
+  max-width: 1100px;
+  margin: 2.5rem auto;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.10);
+  padding: 2.5rem 2rem 2rem 2rem;
+  position: relative;
+}
+
+/* Enhanced Frame */
+.enhanced-frame {
+  width: 100%;
+  aspect-ratio: 16/9;
+  margin-bottom: 2rem;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 4px 24px rgba(0,188,212,0.10);
+  border: 2px solid #e0f7fa;
+  background: #fafbfc;
+  animation: fadeIn 1.2s;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+
+/* Enhanced Floating Icons */
+.enhanced-fixed-icons {
+  position: fixed;
+  top: 50%;
+  left: 2.2rem;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  z-index: 100;
+}
+.sticker {
+  background: #fff;
+  border-radius: 50%;
+  padding: 0.7rem;
+  box-shadow: 0 2px 8px rgba(30,41,59,0.10);
+  font-size: 1.5rem;
+  color: #00bcd4;
+  transition: box-shadow 0.2s, transform 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sticker.bounce {
+  animation: bounce 2.2s infinite;
+}
+.sticker.wiggle {
+  animation: wiggle 2.5s infinite;
+}
+@keyframes bounce {
+  0%, 100% { transform: translateY(0);}
+  20% { transform: translateY(-8px);}
+  40% { transform: translateY(0);}
+  60% { transform: translateY(-4px);}
+  80% { transform: translateY(0);}
+}
+@keyframes wiggle {
+  0%, 100% { transform: rotate(0);}
+  15% { transform: rotate(-12deg);}
+  30% { transform: rotate(10deg);}
+  45% { transform: rotate(-8deg);}
+  60% { transform: rotate(6deg);}
+  75% { transform: rotate(-4deg);}
+  90% { transform: rotate(2deg);}
+}
+.icon-separator {
+  height: 18px;
+  width: 3px;
+  background: linear-gradient(180deg, #00bcd4 0%, #fff 100%);
+  border-radius: 2px;
+  margin: 0 auto;
+  opacity: 0.5;
+}
+
+/* Enhanced Details */
+.enhanced-details {
+  margin-top: 2.5rem;
+  background: linear-gradient(120deg, #f0f4ff 60%, #f7f9fd 100%);
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(30,41,59,0.07);
+  padding: 2rem 1.5rem;
+  animation: fadeIn 1.2s;
+}
+.insights-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.2rem;
+  margin-bottom: 2rem;
+}
+.insight-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(30,41,59,0.06);
+  padding: 1rem 1.2rem;
+  font-size: 1.05rem;
+  color: #1e293b;
+  border-left: 4px solid #00bcd4;
+  transition: box-shadow 0.2s;
+}
+.insight-card:hover {
+  box-shadow: 0 8px 24px rgba(0,188,212,0.13);
+}
+.insight-note {
+  display: block;
+  color: #0097a7;
+  font-size: 0.95em;
+  margin-top: 0.2em;
+}
+.recommendations-list {
+  margin: 1.5rem 0 0 0;
+  padding-left: 1.2rem;
+  font-size: 1.08rem;
+}
+.related-projects-list {
+  margin: 1.2rem 0 0 0;
+  padding-left: 1.2rem;
+  font-size: 1.08rem;
+}
+.related-projects-list li {
+  margin-bottom: 0.7rem;
+}
+.related-projects-list a {
+  color: #00bcd4;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.related-projects-list a:hover {
+  color: #232526;
+  text-decoration: underline;
+}
+
+/* Enhanced Footer */
+.enhanced-footer {
+  background: #222;
+  color: #fff;
+  padding: 2rem 0;
+  text-align: center;
+  margin-top: 3rem;
+  box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+}
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.footer-links a {
+  color: #00bcd4;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 0.2s;
+  display: flex;
+  align-items: center;
+}
+.footer-links a .icon {
+  margin-right: 8px;
+}
+.footer-links a:hover {
+  color: #fff;
+}
+.footer-copy {
+  font-size: 0.95rem;
+  color: #aaa;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .enhanced-project-container {
+    padding: 1.2rem 0.5rem;
+  }
+  .insights-grid {
+    grid-template-columns: 1fr;
+  }
+}

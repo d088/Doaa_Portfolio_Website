@@ -3,165 +3,138 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Car Price Prediction using ML – Jupter Notebook</title>
-  <link rel="stylesheet" href="projects.css" />
+  <title>Car Price Prediction using ML – Jupyter Notebook</title>
+  <meta name="description" content="Car price prediction using ML with Streamlit and EDA insights. Explore factors affecting vehicle prices, correlations, and real-time predictions.">
+  <link rel="stylesheet" href="projects (1).css" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
   <script src="script.js" defer></script>
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-<div id="particles-js"></div>
-  
   <!-- Header -->
-  <header>
-    <h1>Car Price Prediction using ML</h1>
-    <p>Performed data cleaning and exploratory data analysis to transform raw data into
-    meaningful insights using Python and visualization libraries</p>
-    <a href="index.html" class="cv-button" style="margin-top: 1rem; display: inline-block; color: azure;">
-      <i class="fas fa-arrow-left"></i> Back to Portfolio
-    </a>
+  <header class="project-header enhanced-header">
+    <div class="header-bg"></div>
+    <div class="header-content">
+      <a href="index.html" class="cv-button back-btn">
+        <i class="fas fa-arrow-left"></i> Back to Portfolio
+      </a>
+      <i class="fas fa-car header-icon"></i>
+      <h1>Car Price Prediction using ML</h1>
+      <p class="subtitle">
+        Data cleaning, EDA, and predictive modeling for vehicle prices using Python and Streamlit
+      </p>
+    </div>
   </header>
 
-
-
   <!-- Container -->
-  <section class="container">
+  <section class="container enhanced-project-container">
 
-    <!-- Embedded Power BI Dashboard -->
-    <div class="project-frame">
-     <iframe title="Car Price Cleaning & EDA"
-        src="Cars_EDA.html"
-        frameborder="0" allowFullScreen="true">
-      </iframe>
-
+    <!-- Embedded Notebook -->
+    <div class="project-frame enhanced-frame" data-aos="zoom-in">
+      <iframe title="Car Price Cleaning & EDA" width="1110" height="541.25"
+      src="Cars_EDA.html" frameborder="0" allowfullscreen="true" loading="lazy"></iframe>
     </div>
-  <div class="fixed-icons">
-  <a href="https://linkedin.com/in/doaa-ebrahim-19b4751ba" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-  <a href="https://github.com/d088" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-  <a href="mailto:doaae987@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
-  </div>
+
+    <!-- Floating Social Icons -->
+    <div class="fixed-icons enhanced-fixed-icons">
+      <a href="https://linkedin.com/in/doaa-ebrahim-19b4751ba" target="_blank" title="LinkedIn" class="sticker bounce">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://github.com/d088" target="_blank" title="GitHub" class="sticker wiggle">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="mailto:doaae987@gmail.com" title="Email" class="sticker bounce">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </div>
 
     <!-- Project Description -->
-    <div class="project-details">
-      <h2>Project Overview</h2>
-     <p>
-      This project focused on exploratory data analysis (EDA) and predictive modeling for vehicle prices. The goal is to analyze various factors 
-      affecting vehicle prices and build a model to predict prices based on these factors.
-   </p>
-    <h2>About The dataset:</h2>
-      <ul>
-        <li>Source: Kaggle – Vehicle Sales Data</li>
-        <li>Total Rows: ~10,000</li>
-        <li>Challenges: Missing values, inconsistent formatting, incorrect types (object instead of numeric) to estimating vehicle prices based on various attributes.</li>
-        <a href="https://www.kaggle.com/datasets/syedanwarafridi/vehicle-sales-data" target="_blank">🔗 View the Dataset</a>
-      </ul>
-
-      <div class="tip">
-         <p>The interactive dashboard was built using <strong>Streamlit</strong> and Python to analyze and predict vehicle prices based on features 
-    such as brand, year, mileage, fuel type, and more. It offers visual EDA, feature exploration, and real-time prediction tools.</p>
-      </div>
-
-
-      <h2>📊 Exploratory Data Analysis (EDA)</h2>
-      <ul>
-        <li>🚘 Analyzed price distribution to understand value concentration across vehicle types.</li>
-        <li>📅 Identified depreciation trends based on year of production.</li>
-        <li>🛠 Correlation heatmap revealed strongest features affecting price were: mileage, engine size, and brand.</li>
-        <li>🧹 Performed feature engineering such as converting categorical data to numerical form.</li>
-      </ul>
-
-      <h2>🧠 Machine Learning Model</h2>
+    <div class="project-details enhanced-details" data-aos="fade-up">
+      <h2><i class="fas fa-lightbulb"></i> Project Overview</h2>
       <p>
-        A <strong>Random Forest Regressor</strong> model was trained to predict used car prices. After cleaning and preprocessing the data,
-        relevant features such as mileage, engine size, car age, and fuel type were selected. The model was evaluated using R² and MSE,
-        and showed strong performance in predicting prices accurately. The final model was deployed to Streamlit and responds in real-time
-        to user inputs on the dashboard.
+        This project involved analyzing and predicting vehicle prices through exploratory data analysis (EDA) and machine learning. The goal was to identify key factors influencing car prices and develop a predictive model using Python and Streamlit.
       </p>
 
-      <h2>📈 Streamlit Dashboard Features</h2>
-      <ul>
-        <li>📌 Sidebar filters for year, transmission type, and engine size.</li>
-        <li>📉 Interactive plots showing price trends and outliers.</li>
-        <li>⚙️ Regression model with prediction output displayed on input submission.</li>
+      <h2><i class="fas fa-database"></i> About the Dataset</h2>
+      <ul class="recommendations-list">
+        <li>Source: Kaggle – Vehicle Sales Data</li>
+        <li>Total Rows: ~10,000</li>
+        <li>Challenges: Missing values, inconsistent formatting, and mixed data types affecting model readiness</li>
+        <li><a href="https://www.kaggle.com/datasets/syedanwarafridi/vehicle-sales-data" target="_blank">🔗 View Dataset</a></li>
       </ul>
 
-      <h2>💡 Key Insights</h2>
-      <ul>
-        <li>Luxury brands and larger engines tend to have significantly higher resale prices.</li>
-        <li>Manual transmission vehicles slightly depreciate slower in some regions.</li>
-        <li>Vehicle age is inversely proportional to price but not always linearly.</li>
-        <li>Diesel cars generally have a higher price range than petrol or CNG models.</li>
-      <li>Engine size and mileage are among the most influential factors affecting price.</li>
-      <li>Luxury brands like BMW and Audi show significantly higher average resale values.</li>
+      <div class="tip" data-aos="fade-right">
+        <p><strong>Dashboard:</strong> Built with <strong>Streamlit</strong> to explore features like brand, year, mileage, fuel type, and predict car prices interactively.</p>
+      </div>
+
+      <h2><i class="fas fa-chart-line"></i> Exploratory Data Analysis (EDA)</h2>
+      <ul class="recommendations-list">
+        <li>Analyzed price distribution and depreciation trends by year.</li>
+        <li>Correlation heatmap revealed key features: mileage, engine size, brand.</li>
+        <li>Feature engineering: Converted categorical variables to numerical form.</li>
       </ul>
 
-      <ul>
-         <p>
+      <h2><i class="fas fa-brain"></i> Machine Learning Model</h2>
+      <p>
+        A <strong>Random Forest Regressor</strong> was trained on cleaned and engineered data. Key features like mileage, engine size, car age, and fuel type were used. The model was evaluated with R² and MSE and deployed to Streamlit for real-time predictions.
+      </p>
 
+      <h2><i class="fas fa-chart-bar"></i> Streamlit Dashboard Features</h2>
+      <ul class="recommendations-list">
+        <li>Sidebar filters for year, transmission type, and engine size</li>
+        <li>Interactive visualizations showing price trends and outliers</li>
+        <li>Regression model outputs predicted prices on user input</li>
+      </ul>
 
-          📂  View the full project notebook on
-          <a href="https://github.com/d088/Vehicles_Price_EDA_Predict/blob/main" target="_blank">GitHub</a></p>
-        <p>View the Dashboard on
-          <a href="https://car-price-eda-pridection-dash.streamlit.app/" target="_blank">Streamlit</a></p>
-        </p>
-     </ul>
+      <h2><i class="fas fa-lightbulb"></i> Key Insights</h2>
+      <div class="insights-grid">
+        <div class="insight-card" data-aos="zoom-in"><i class="fas fa-gem"></i><br><strong>Luxury Brands:</strong><br><span class="insight-note">BMW, Audi retain highest resale value</span></div>
+        <div class="insight-card" data-aos="zoom-in"><i class="fas fa-cogs"></i><br><strong>Engine Size:</strong><br><span class="insight-note">Larger engines drive higher prices</span></div>
+        <div class="insight-card" data-aos="zoom-in"><i class="fas fa-cogs"></i><br><strong>Transmission:</strong><br><span class="insight-note">Manual cars depreciate slower in some regions</span></div>
+        <div class="insight-card" data-aos="zoom-in"><i class="fas fa-gas-pump"></i><br><strong>Fuel Type:</strong><br><span class="insight-note">Diesel vehicles show higher resale than petrol</span></div>
+        <div class="insight-card" data-aos="zoom-in"><i class="fas fa-hourglass-half"></i><br><strong>Age Factor:</strong><br><span class="insight-note">Price decreases with age but not linearly</span></div>
+      </div>
 
-     </div>
+      <ul class="recommendations-list" style="margin-top: 1rem;">
+        <li>
+          View full project on 
+          <a href="https://github.com/d088/Vehicles_Price_EDA_Predict/blob/main" target="_blank">GitHub</a> | 
+          <a href="https://car-price-eda-pridection-dash.streamlit.app/" target="_blank">Streamlit Dashboard</a>
+        </li>
+      </ul>
+    </div>
+
     <!-- Related Projects -->
-    <div class="project-details" style="margin-top: 3rem;">
-      <h2>You Can Also See</h2>
-      <ul>
-        <li><a href="project1.html"><i class="fas fa-chart-line"></i> YouTube Dashboard </a></li>
-        <li><a href="project2.html"><i class="fas fa-chart-line"></i> Adventure Works Dashboard – Power BI</a></li>
-        <li><a href="project3.html"><i class="fas fa-user-check"></i> super Store Analysis– Tableau</a></li>
+    <div class="project-details enhanced-details" style="margin-top: 3rem;" data-aos="fade-up">
+      <h2><i class="fas fa-link"></i> You Can Also See</h2>
+      <ul class="related-projects-list">
+        <li><a href="project1.html"><i class="fas fa-chart-line"></i> YouTube Dashboard</a></li>
+        <li><a href="project2.html"><i class="fas fa-user-check"></i> Adventure Works Dashboard – Power BI</a></li>
+        <li><a href="project3.html"><i class="fas fa-chart-bar"></i> Super Store Analysis – Tableau</a></li>
         <li><a href="project4.html"><i class="fas fa-code"></i> Google Store Cleaning & EDA – Python Notebook</a></li>
       </ul>
     </div>
-
   </section>
 
-  <!-- Footer with Contacts -->
-  <footer>
-    <p><i class="fas fa-envelope icon"></i> <a href="mailto:doaae987@gmail.com">doaae987@gmail.com</a></p>
-    <p><i class="fab fa-linkedin icon"></i> <a href="https://linkedin.com/in/doaa-ebrahim-19b4751ba">LinkedIn</a></p>
-    <p><i class="fab fa-github icon"></i> <a href="https://github.com/d088">GitHub</a></p>
+  <!-- Footer -->
+  <footer class="enhanced-footer">
+    <div class="footer-links">
+      <a href="mailto:doaae987@gmail.com">
+        <i class="fas fa-envelope icon"></i>doaae987@gmail.com
+      </a>
+      <a href="https://linkedin.com/in/doaa-ebrahim-19b4751ba" target="_blank">
+        <i class="fab fa-linkedin icon"></i>LinkedIn
+      </a>
+      <a href="https://github.com/d088" target="_blank">
+        <i class="fab fa-github icon"></i>GitHub
+      </a>
+    </div>
+    <div class="footer-copy">
+      &copy; 2024 Doaa Ebrahim. All rights reserved.
+    </div>
   </footer>
 
-  <!-- Load Particles.js from CDN -->
-<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-<script>
-  particlesJS("particles-js", {
-    particles: {
-      number: { value: 50 },
-      color: { value: "#1e40af" },
-      shape: { type: "circle" },
-      opacity: { value: 0.4 },
-      size: { value: 3 },
-      line_linked: {
-        enable: true,
-        distance: 150,
-        color: "#1e40af",
-        opacity: 0.4,
-        width: 1
-      },
-      move: {
-        enable: true,
-        speed: 2
-      }
-    },
-    interactivity: {
-      events: {
-        onhover: { enable: true, mode: "grab" },
-        onclick: { enable: true, mode: "push" }
-      },
-      modes: {
-        grab: { distance: 140, line_linked: { opacity: 1 } },
-        push: { particles_nb: 4 }
-      }
-    },
-    retina_detect: true
-  });
-</script>
-
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>AOS.init();</script>
 </body>
 </html>
