@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Car Price Prediction – Machine Learning</title>
+  <title>Spotify Top Songs 2023 – Power BI Analysis</title>
   <link rel="stylesheet" href="projects (1).css" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
   <script src="script.js" defer></script>
@@ -17,17 +17,18 @@
       <a href="index.html" class="cv-button back-btn">
         <i class="fas fa-arrow-left"></i> Back to Portfolio
       </a>
-      <i class="fas fa-car header-icon"></i>
-      <h1>Car Price Prediction</h1>
-      <p class="subtitle">Predicting used car prices with Machine Learning & Streamlit</p>
+      <i class="fab fa-spotify header-icon"></i>
+      <h1>Spotify Top Songs 2023 Analysis</h1>
+      <p class="subtitle">Exploring music trends through data storytelling and Power BI</p>
     </div>
   </header>
 
   <!-- Container -->
   <section class="container enhanced-project-container">
-    <!-- Embedded Notebook -->
+    <!-- Embedded Power BI Dashboard -->
     <div class="project-frame enhanced-frame" data-aos="zoom-in">
-      <iframe src="Cars_EDA.html" width="1110" height="541.25" frameborder="0" allowfullscreen="true"></iframe>
+      <iframe title="SpotyfyDash_Day02" width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=a71831b5-fe89-4c5a-b85b-6ef49f071a65&autoAuth=true&ctid=5f593c84-cad4-46c8-b3de-321c3e829a99" 
+      frameborder="0" allowFullScreen="true"></iframe>
     </div>
 
     <!-- Social Icons -->
@@ -47,67 +48,55 @@
     <div class="project-details enhanced-details" data-aos="fade-up">
       <h2><i class="fas fa-road"></i> Project Overview</h2>
       <p>
-        Buying a used car can feel like a gamble —The used car market is dynamic, with prices influenced by **brand, mileage, fuel type, year of manufacture, and region**.  
-        This project uses **machine learning** to analyze historical vehicle sales data and predict accurate price estimates —  
-        helping both **buyers** and **dealers** make data-driven decisions.
+        In 2023, Spotify dominated global streaming, and its top songs reflect evolving listener preferences.  
+        Using the <a href="https://www.kaggle.com/datasets/nelgiriyewithana/top-spotify-songs-2023" target="_blank">Top Spotify Songs 2023</a> dataset, I explored key metrics like **popularity, danceability, energy, and acousticness** to understand what makes a hit song resonate with audiences.
       </p>
 
       <h2><i class="fas fa-database"></i> Dataset</h2>
       <p>
-        We used the <a href="https://www.kaggle.com/datasets/syedanwarafridi/vehicle-sales-data" target="_blank">Vehicle Sales Data</a> dataset from Kaggle.  
-        It contains **10,000+ vehicle listings** with attributes like brand, year, transmission, fuel type, mileage, and price.
+        The dataset contains **200+ top streamed songs** with attributes like artist, streams, BPM, energy, danceability, and release year.  
+        Perfect for analyzing **genre trends**, **artist dominance**, and **audio feature correlations**.
       </p>
 
-      <h2><i class="fas fa-brain"></i> Methodology</h2>
+      <h2><i class="fas fa-tools"></i> Approach</h2>
       <p>
-        The workflow combines **Exploratory Data Analysis (EDA)**, **Feature Engineering**, and **Random Forest Regression** modeling:
+        I combined **Power Query** for cleaning, **DAX** for metrics, and **Power BI visuals** to narrate the music trends story.
       </p>
 
       <!-- Flow Diagram -->
       <div class="flow-diagram" data-aos="zoom-in">
         <div class="flow-step">
-          <i class="fas fa-broom"></i>
-          <p>Data Cleaning<br><small>Handle missing values & anomalies</small></p>
+          <i class="fas fa-file-excel"></i>
+          <p>Dataset<br><small>Spotify Top Songs 2023</small></p>
+        </div>
+        <div class="flow-arrow"><i class="fas fa-arrow-right"></i></div>
+        <div class="flow-step">
+          <i class="fas fa-filter"></i>
+          <p>Power Query<br><small>Clean & transform data</small></p>
+        </div>
+        <div class="flow-arrow"><i class="fas fa-arrow-right"></i></div>
+        <div class="flow-step">
+          <i class="fas fa-calculator"></i>
+          <p>DAX<br><small>Custom metrics: popularity index, genre averages</small></p>
         </div>
         <div class="flow-arrow"><i class="fas fa-arrow-right"></i></div>
         <div class="flow-step">
           <i class="fas fa-chart-line"></i>
-          <p>EDA<br><small>Outlier detection, correlation heatmaps</small></p>
-        </div>
-        <div class="flow-arrow"><i class="fas fa-arrow-right"></i></div>
-        <div class="flow-step">
-          <i class="fas fa-cogs"></i>
-          <p>Feature Engineering<br><small>Encoding, scaling, deriving new features</small></p>
-        </div>
-        <div class="flow-arrow"><i class="fas fa-arrow-right"></i></div>
-        <div class="flow-step">
-          <i class="fas fa-robot"></i>
-          <p>Modeling<br><small>Random Forest Regressor, hyperparameter tuning</small></p>
-        </div>
-        <div class="flow-arrow"><i class="fas fa-arrow-right"></i></div>
-        <div class="flow-step">
-          <i class="fas fa-desktop"></i>
-          <p>Streamlit Dashboard<br><small>Interactive price prediction</small></p>
+          <p>Power BI Dashboard<br><small>Interactive insights & trends</small></p>
         </div>
       </div>
 
       <h2><i class="fas fa-lightbulb"></i> Key Insights</h2>
       <div class="insights-grid">
-        <div class="insight-card"><strong>Luxury Brands:</strong> BMW, Audi<br><span class="insight-note">Highest average resale values</span></div>
-        <div class="insight-card"><strong>Depreciation:</strong> Year & mileage<br><span class="insight-note">Strongest price influencers</span></div>
-        <div class="insight-card"><strong>Fuel Type:</strong> Diesel > Petrol<br><span class="insight-note">Diesel cars hold value longer</span></div>
-        <div class="insight-card"><strong>Model Performance:</strong> R² = 0.87<br><span class="insight-note">Accurate predictions with minimal error</span></div>
+        <div class="insight-card"><strong>Most Streamed Genre:</strong> Pop<br><span class="insight-note">Dominates 2023 charts globally</span></div>
+        <div class="insight-card"><strong>Top Artist:</strong> Taylor Swift<br><span class="insight-note">Multiple tracks in top rankings</span></div>
+        <div class="insight-card"><strong>Average BPM:</strong> 120–130<br><span class="insight-note">High-energy tracks lead the charts</span></div>
+        <div class="insight-card"><strong>Feature Correlation:</strong> Danceability & Popularity<br><span class="insight-note">Strong positive relationship</span></div>
       </div>
-
-      <h2><i class="fas fa-code-branch"></i> GitHub Repository</h2>
-      <p>
-        Full code, including **EDA notebook**, **modeling script**, and **Streamlit dashboard**, is available here:  
-        <a href="https://github.com/d088/Vehicles_Price_EDA_Predict" target="_blank">GitHub – Vehicles Price EDA & Prediction</a>
-      </p>
 
       <h2><i class="fas fa-bullseye"></i> Why It Matters</h2>
       <p>
-        This solution empowers buyers to **negotiate fair deals** and dealers to **price inventory competitively** — bridging the gap between market trends and customer expectations.
+        This analysis gives **record labels and artists** data-backed insights into **what drives listener engagement** and helps them plan releases aligned with audience preferences.
       </p>
     </div>
 
@@ -119,7 +108,7 @@
         <li><a href="project2.html"><i class="fas fa-database"></i> AdventureWorks Dashboard – Power BI</a></li>
         <li><a href="project3.html"><i class="fas fa-chart-bar"></i> Superstore Sales Analysis – Tableau</a></li>
         <li><a href="project4.html"><i class="fas fa-code"></i> Google Store Cleaning & EDA – Python Notebook</a></li>
-        <p><a href="project6.html"><i class="fas fa-music"></i> Spotify Top Songs 2023 Analysis – Power BI</a></p>
+        <li><a href="project5.html"><i class="fas fa-car"></i> Car Price Prediction – ML</a></li>
       </ul>
     </div>
   </section>

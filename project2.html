@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Adventure Works2022 Analysis – Power BI</title>
+  <title>AdventureWorks2022 Sales & Customer Insights – Power BI</title>
   <link rel="stylesheet" href="projects (1).css" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
   <script src="script.js" defer></script>
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-  <!--Header-->
+  <!-- Header -->
   <header class="project-header enhanced-header">
     <div class="header-bg"></div>
     <div class="header-content">
@@ -18,22 +18,22 @@
         <i class="fas fa-arrow-left"></i> Back to Portfolio
       </a>
       <i class="fas fa-database header-icon"></i>
-      <h1>Adventure Works2022 Data Analysis</h1>
-      <p class="subtitle">Interactive Power BI Dashboard to Unlock Customer & Sales Insights</p>
+      <h1>AdventureWorks2022 Analysis</h1>
+      <p class="subtitle">From SQL Server restoration to actionable Power BI insights</p>
     </div>
   </header>
 
   <!-- Container -->
   <section class="container enhanced-project-container">
 
-    <!-- Embedded Power BI Dashboard -->
+    <!-- Embedded Dashboard -->
     <div class="project-frame enhanced-frame" data-aos="zoom-in">
-      <iframe title="Adventure Works2022 Dashboard" width="1140" height="541.25" 
-        src="https://app.powerbi.com/reportEmbed?reportId=339c132b-c3f1-4d3d-9517-cb45b85e8a5e&autoAuth=true&ctid=5f593c84-cad4-46c8-b3de-321c3e829a99" 
+      <iframe title="Adventure Works Dashboard" width="1140" height="541.25"
+        src="https://app.powerbi.com/reportEmbed?reportId=339c132b-c3f1-4d3d-9517-cb45b85e8a5e&autoAuth=true&ctid=5f593c84-cad4-46c8-b3de-321c3e829a99"
         frameborder="0" allowfullscreen="true"></iframe>
     </div>
 
-    <!-- Floating Social Icons with Animation and Separation -->
+    <!-- Social Links -->
     <div class="fixed-icons enhanced-fixed-icons">
       <a href="https://linkedin.com/in/doaa-ebrahim-19b4751ba" target="_blank" title="LinkedIn" class="sticker bounce">
         <i class="fab fa-linkedin"></i>
@@ -46,41 +46,62 @@
       </a>
     </div>
 
-    <!-- Project Description -->
+    <!-- Storytelling Content -->
     <div class="project-details enhanced-details" data-aos="fade-up">
-      <h2><i class="fas fa-lightbulb"></i> Project Overview</h2>
+      
+      <h2><i class="fas fa-road"></i> How the Project Started</h2>
+      <p>
+        The <strong> AdventureWorks2022</strong> dataset from Microsoft is a goldmine of realistic business data: customers, sales, products, and geography.  
+        To begin, I restored the database into <strong>SQL Server</strong> — a crucial first step to ensure access to the raw tables and relationships.
+      </p>
+
+      <h2><i class="fas fa-database"></i> Data Restoration & Preparation</h2>
+      <p>
+        After restoring the ".bak" file into SQL Server, I explored the schema: multiple fact and dimension tables with relationships ideal for star schema modeling.  
+        Using <strong>SQL queries</strong>, I extracted clean subsets of data — such as total sales by geography, product performance, and customer demographics — ready for Power BI import.
+      </p>
+
+      <!-- Flow Diagram -->
+      <div class="flow-diagram" data-aos="zoom-in">
+        <div class="flow-step">
+          <i class="fas fa-server"></i>
+          <p>SQL Server<br><small>Restore & query raw tables</small></p>
+        </div>
+        <div class="flow-arrow"><i class="fas fa-arrow-right"></i></div>
+        <div class="flow-step">
+          <i class="fas fa-filter"></i>
+          <p>Power Query<br><small>Data cleaning & shaping</small></p>
+        </div>
+        <div class="flow-arrow"><i class="fas fa-arrow-right"></i></div>
+        <div class="flow-step">
+          <i class="fas fa-calculator"></i>
+          <p>DAX<br><small>Calculated measures</small></p>
+        </div>
+        <div class="flow-arrow"><i class="fas fa-arrow-right"></i></div>
+        <div class="flow-step">
+          <i class="fas fa-chart-line"></i>
+          <p>Power BI Dashboard<br><small>Interactive insights</small></p>
+        </div>
+      </div>
+
+      <h2><i class="fas fa-tools"></i> Power Query & DAX in Action</h2>
+      <p>
+        Once in Power BI, I leaned on <strong>Power Query</strong> to merge tables, remove duplicates, and standardize data types.  
+        With <strong>DAX</strong>, I crafted custom measures — like profit margins, top product rankings, and year-over-year comparisons — turning raw numbers into actionable metrics.
+      </p>
+
+      <h2><i class="fas fa-lightbulb"></i> Key Insights</h2>
       <div class="insights-grid">
         <div class="insight-card"><strong>Customers:</strong> 18k+<br><span class="insight-note">Diverse global base</span></div>
-        <div class="insight-card"><strong>Orders:</strong> 2k+<br><span class="insight-note">Rich sales data</span></div>
-        <div class="insight-card"><strong>Products:</strong> 158<br><span class="insight-note">Wide product range</span></div>
-        <div class="insight-card"><strong>Total Revenue:</strong> $2M<br><span class="insight-note">Strong sales</span></div>
-        <div class="insight-card"><strong>Total Profit:</strong> $868K<br><span class="insight-note">Healthy margins</span></div>
-        <div class="insight-card"><strong>Top Product:</strong> Mountain-200<br><span class="insight-note">$657K+ revenue</span></div>
-        <div class="insight-card"><strong>Top Country:</strong> United States<br><span class="insight-note">1,741 orders</span></div>
+        <div class="insight-card"><strong>Top Product:</strong> Mountain-200<br><span class="insight-note">$657K revenue</span></div>
+        <div class="insight-card"><strong>Orders:</strong> 2k+<br><span class="insight-note">Majority from US & Australia</span></div>
+        <div class="insight-card"><strong>Revenue:</strong> $2M<br><span class="insight-note">Healthy profit margins</span></div>
       </div>
-      <h2><i class="fas fa-cogs"></i> Technical Approach</h2>
-      <ul class="recommendations-list">
-        <li>Utilized <b>DAX functions</b> to calculate Total Sales and Profit</li>
-        <li>Standardized all currencies to <b>USD</b> for consistency</li>
-        <li>Leveraged <b>Power Query</b> for comprehensive data cleaning and transformation</li>
-      </ul>
-      <h2><i class="fas fa-users"></i> Customer Insights</h2>
-      <ul class="recommendations-list">
-        <li>18K Total Customers with an Average Yearly Income of $57,306 across 6 countries</li>
-        <li>The 40-60 age group dominates the customer base (~11.8K customers)</li>
-        <li>54.16% of customers are Single while 45.84% are Married</li>
-        <li>Commute Distance impacts customer distribution, with most residing within 0-1 miles (6.3K customers)</li>
-      </ul>
-      <h2><i class="fas fa-chart-bar"></i> Sales & Profit Insights</h2>
-      <ul class="recommendations-list">
-        <li>Bikes represent the largest share of orders (60.45%), followed by Clothing (24.11%) and Accessories (15.44%)</li>
-        <li>The United States leads in total orders (1,741 orders), followed by Australia (1,150 orders)</li>
-      </ul>
-      <h2><i class="fas fa-trophy"></i> Top Performing Products</h2>
-      <ul class="recommendations-list">
-        <li>Mountain-200 leads the revenue chart with $657K+, contributing to 302 total orders</li>
-        <li>Road-150 and Road-250 follow closely, with significant revenue and order volumes</li>
-      </ul>
+
+      <h2><i class="fas fa-bullseye"></i> Why This Matters</h2>
+      <p>
+        This dashboard empowers stakeholders to see where sales come from, who buys the most, and which products drive revenue — essential insights for inventory planning, marketing strategies, and profit optimization.
+      </p>
     </div>
 
     <!-- Related Projects -->
@@ -91,11 +112,12 @@
         <li><a href="project3.html"><i class="fas fa-user-check"></i> Super Store Analysis – Tableau</a></li>
         <li><a href="project4.html"><i class="fas fa-code"></i> Google Store Cleaning & EDA – Python Notebook</a></li>
         <li><a href="project5.html"><i class="fas fa-car"></i> Car Price Prediction using ML – Python Notebook</a></li>
+        <p><a href="project6.html"><i class="fas fa-music"></i> Spotify Top Songs 2023 Analysis – Power BI</a></p>
       </ul>
     </div>
   </section>
 
-  <!-- Footer with Contacts -->
+  <!-- Footer -->
   <footer class="enhanced-footer">
     <div class="footer-links">
       <a href="mailto:doaae987@gmail.com">
@@ -114,8 +136,6 @@
   </footer>
 
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
+  <script>AOS.init();</script>
 </body>
 </html>

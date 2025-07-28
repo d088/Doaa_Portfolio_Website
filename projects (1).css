@@ -257,3 +257,117 @@
     grid-template-columns: 1fr;
   }
 }
+
+
+
+/* Gradient background for project details */
+.enhanced-details {
+  background: linear-gradient(135deg, #ffffff, #f4f8fb);
+  padding: 2rem;
+  margin: 2rem 0;
+  border-radius: 1rem;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.05);
+  line-height: 1.6;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.enhanced-details:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Animate section headings */
+.enhanced-details h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  color: var(--primary, #222);
+  position: relative;
+}
+
+.enhanced-details h2::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background: var(--accent-color, #00bcd4);
+  border-radius: 2px;
+}
+
+/* Flow diagram animations */
+.flow-diagram {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+}
+
+.flow-step {
+  background: var(--background-alt, #eef2f7);
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+  text-align: center;
+  flex: 1;
+  min-width: 140px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.flow-step:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.08);
+}
+
+.flow-step i {
+  font-size: 1.8rem;
+  color: var(--accent-color, #00bcd4);
+  margin-bottom: 0.3rem;
+  display: block;
+}
+
+.flow-arrow i {
+  font-size: 1.5rem;
+  color: var(--accent-color, #00bcd4);
+  animation: pulse-arrow 1.2s infinite ease-in-out;
+}
+
+/* Arrow pulse animation */
+@keyframes pulse-arrow {
+  0%, 100% {
+    opacity: 0.4;
+    transform: translateX(0);
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(5px);
+  }
+}
+
+/* Insight cards hover effect */
+.insight-card {
+  background: #fff;
+  border-radius: 1rem;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.insight-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+}
+
+/* Responsive flow for mobile */
+@media (max-width: 768px) {
+  .flow-diagram {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .flow-arrow i {
+    transform: rotate(90deg);
+  }
+}

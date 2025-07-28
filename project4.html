@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Google Store Cleaning & EDA – Jupyter Notebook</title>
+  <title>Google Play Store Cleaning & EDA – Python Notebook</title>
   <link rel="stylesheet" href="projects (1).css" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
   <script src="script.js" defer></script>
@@ -17,24 +17,20 @@
       <a href="index.html" class="cv-button back-btn">
         <i class="fas fa-arrow-left"></i> Back to Portfolio
       </a>
-      <i class="fas fa-database header-icon"></i>
-      <h1>Google Store Cleaning & EDA</h1>
-      <p class="subtitle">
-        Data cleaning and exploratory data analysis on Google Play Store apps using Python
-      </p>
+      <i class="fab fa-google-play header-icon"></i>
+      <h1>Google Play Store Cleaning & EDA</h1>
+      <p class="subtitle">Uncovering trends from 10,000+ apps through Python EDA</p>
     </div>
   </header>
 
   <!-- Container -->
   <section class="container enhanced-project-container">
-
     <!-- Embedded Notebook -->
     <div class="project-frame enhanced-frame" data-aos="zoom-in">
-      <iframe title="Data Cleaning & EDA" width="1110" height="541.25"  
-      src="DataCleaning&EDA.html" frameborder="0" allowfullscreen="true"></iframe>
+      <iframe src="DataCleaning&EDA.html" width="1110" height="541.25" frameborder="0" allowfullscreen="true"></iframe>
     </div>
 
-    <!-- Floating Social Icons -->
+    <!-- Social Icons -->
     <div class="fixed-icons enhanced-fixed-icons">
       <a href="https://linkedin.com/in/doaa-ebrahim-19b4751ba" target="_blank" title="LinkedIn" class="sticker bounce">
         <i class="fab fa-linkedin"></i>
@@ -47,47 +43,61 @@
       </a>
     </div>
 
-    <!-- Project Description -->
+    <!-- Storytelling Content -->
     <div class="project-details enhanced-details" data-aos="fade-up">
-      <h2><i class="fas fa-lightbulb"></i> Project Overview</h2>
+      <h2><i class="fas fa-road"></i> The Challenge</h2>
       <p>
-        Analyzed 10,000+ Android apps to clean inconsistencies and derive insights from Google Play Store data. Explored trends in categories, installs, ratings, and pricing models using Python and visualization libraries.
+        The Google Play Store hosts millions of apps, but understanding **what drives installs and ratings** isn’t obvious.  
+        Using Kaggle’s <a href="https://www.kaggle.com/datasets/yassershrief/goggle-play-data" target="_blank">Google Play Store dataset</a>, I cleaned and explored over 10,000 app records — revealing key patterns hidden in messy, inconsistent data.
       </p>
 
-      <h2><i class="fas fa-database"></i> About the Dataset</h2>
-      <ul class="recommendations-list">
-        <li>Source: Kaggle – Google Play Store Data</li>
-        <li>Total Rows: ~10,000</li>
-        <li>Challenges: Missing values, inconsistent formats (e.g., “1,000+” installs), and incorrect types</li>
-        <li><a href="https://www.kaggle.com/datasets/yassershrief/goggle-play-data" target="_blank">🔗 View Dataset</a></li>
-      </ul>
+      <h2><i class="fas fa-broom"></i> Cleaning & Exploration</h2>
+      <p>
+        The dataset had issues: missing ratings, inconsistent installs (e.g., “1,000+”), mixed formats, and irrelevant symbols in tags.  
+        Here’s how I tackled them using **Python (Pandas, Seaborn, Matplotlib)**:
+      </p>
 
-      <div class="tip">
-        <p><strong>Tools Used:</strong> Python, Pandas, Seaborn, Matplotlib, Jupyter</p>
+      <!-- Flow Diagram -->
+      <div class="flow-diagram" data-aos="zoom-in">
+        <div class="flow-step">
+          <i class="fas fa-database"></i>
+          <p>Raw Data<br><small>Messy installs, missing values</small></p>
+        </div>
+        <div class="flow-arrow"><i class="fas fa-arrow-right"></i></div>
+        <div class="flow-step">
+          <i class="fas fa-broom"></i>
+          <p>Cleaning<br><small>Format fixes & missing value handling</small></p>
+        </div>
+        <div class="flow-arrow"><i class="fas fa-arrow-right"></i></div>
+        <div class="flow-step">
+          <i class="fas fa-chart-bar"></i>
+          <p>EDA<br><small>Category trends & rating insights</small></p>
+        </div>
       </div>
 
-      <h2><i class="fas fa-chart-line"></i> Key Insights</h2>
+      <h2><i class="fas fa-lightbulb"></i> Insights</h2>
       <div class="insights-grid">
-        <div class="insight-card"><strong>Top Categories:</strong><br><span class="insight-note">Family, Game, Tools dominate</span></div>
-        <div class="insight-card"><strong>Most Installed:</strong><br><span class="insight-note">Communication, Social, Entertainment apps</span></div>
-        <div class="insight-card"><strong>Free Apps:</strong><br><span class="insight-note">90% of apps are free; paid mostly utility tools</span></div>
-        <div class="insight-card"><strong>Ratings:</strong><br><span class="insight-note">Most rated 4.0–4.5 stars, few below 3.0</span></div>
-        <div class="insight-card"><strong>Correlation:</strong><br><span class="insight-note">Reviews correlate with installs; size vs rating weak</span></div>
+        <div class="insight-card"><strong>Top Categories:</strong> Family, Games<br><span class="insight-note">Most app variety & installs</span></div>
+        <div class="insight-card"><strong>Free Apps:</strong> 90%<br><span class="insight-note">Paid apps mostly utilities</span></div>
+        <div class="insight-card"><strong>Ratings:</strong> 4.0–4.5<br><span class="insight-note">Most apps cluster in this range</span></div>
+        <div class="insight-card"><strong>Installs:</strong> Social & Communication<br><span class="insight-note">Highest average installs</span></div>
       </div>
 
-      <ul class="recommendations-list" style="margin-top: 1rem;">
-        <li><a href="https://github.com/d088/GooglePalyStore_Apps/tree/main" target="_blank">🔗 View Project on GitHub</a></li>
-      </ul>
+      <h2><i class="fas fa-bullseye"></i> Why It Matters</h2>
+      <p>
+        These insights help **developers optimize pricing models and categories**, and help **marketers focus on high-install segments** for campaigns.
+      </p>
     </div>
 
     <!-- Related Projects -->
     <div class="project-details enhanced-details" style="margin-top: 3rem;" data-aos="fade-up">
       <h2><i class="fas fa-link"></i> You Can Also See</h2>
       <ul class="related-projects-list">
-        <li><a href="project1.html"><i class="fas fa-chart-line"></i> YouTube Dashboard</a></li>
-        <li><a href="project2.html"><i class="fas fa-user-check"></i> Adventure Works Dashboard – Power BI</a></li>
-        <li><a href="project3.html"><i class="fas fa-chart-bar"></i> Super Store Analysis – Tableau</a></li>
-        <li><a href="project5.html"><i class="fas fa-car"></i> Car Price Prediction using ML – Python Notebook</a></li>
+        <li><a href="project1.html"><i class="fas fa-chart-line"></i> YouTube Dashboard – Power BI</a></li>
+        <li><a href="project2.html"><i class="fas fa-database"></i> AdventureWorks Dashboard – Power BI</a></li>
+        <li><a href="project3.html"><i class="fas fa-chart-bar"></i> Superstore Sales Analysis – Tableau</a></li>
+        <li><a href="project5.html"><i class="fas fa-car"></i> Car Price Prediction – ML</a></li>
+        <p><a href="project6.html"><i class="fas fa-music"></i> Spotify Top Songs 2023 Analysis – Power BI</a></p>
       </ul>
     </div>
   </section>
