@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Marketing Campaigns Analysis – Power BI</title>
+  <link rel="stylesheet" href="projects (1).css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+  <script src="script.js" defer></script>
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header class="project-header enhanced-header">
+    <div class="header-bg"></div>
+    <div class="header-content">
+      <a href="index.html" class="cv-button back-btn">
+        <i class="fas fa-arrow-left"></i> Back to Portfolio
+      </a>
+      <i class="fas fa-bullhorn header-icon"></i>
+      <h1>Marketing Campaigns Analysis</h1>
+      <p class="subtitle">Optimizing campaigns through customer insights & performance metrics</p>
+    </div>
+  </header>
+
+  <!-- Container -->
+  <section class="container enhanced-project-container">
+    <!-- Embedded Power BI Dashboard -->
+    <div class="project-frame enhanced-frame" data-aos="zoom-in">
+      <iframe title="Marketing Campaign Dashboard" width="1140" height="541.25"
+        src="https://app.powerbi.com/reportEmbed?reportId=9bed2335-93ef-4e21-a28b-195e3b9318d4&autoAuth=true&ctid=5f593c84-cad4-46c8-b3de-321c3e829a99"
+        frameborder="0" allowfullscreen="true"></iframe>
+    </div>
+
+    <!-- Social Icons -->
+    <div class="fixed-icons enhanced-fixed-icons">
+      <a href="https://linkedin.com/in/doaa-ebrahim-19b4751ba" target="_blank" title="LinkedIn" class="sticker bounce">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://github.com/d088" target="_blank" title="GitHub" class="sticker wiggle">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="mailto:doaae987@gmail.com" title="Email" class="sticker bounce">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </div>
+
+    <!-- Storytelling Content -->
+    <div class="project-details enhanced-details" data-aos="fade-up">
+      <h2><i class="fas fa-road"></i> Project Overview</h2>
+      <p>
+        Marketing campaigns are powerful tools for customer engagement — but understanding who responds and why is key to maximizing ROI.  
+        In this project, I analyzed a multi-channel marketing dataset to answer crucial questions:  
+        <em>Which channels drive the most conversions? What demographics respond best? How should future budgets be allocated?</em>
+      </p>
+
+      <h2><i class="fas fa-database"></i> Dataset Details</h2>
+      <p>
+        The dataset from <strong>Marketing_campaigns.xlsx</strong> includes:
+      </p>
+      <ul class="recommendations-list">
+        <li><strong>Customer demographics:</strong> Age, income, marital status, education level</li>
+        <li><strong>Campaign data:</strong> Number of offers sent, channels used (email, web, social media, store)</li>
+        <li><strong>Purchasing behavior:</strong> Total spend, frequency of purchases, product categories</li>
+        <li><strong>Response metrics:</strong> Whether customers accepted each campaign</li>
+      </ul>
+      <p>
+        This data enables segmentation analysis and reveals channel performance across different audiences.
+      </p>
+
+      <h2><i class="fas fa-tools"></i> Analytical Approach</h2>
+      <p>
+        The workflow combined Power Query for data preparation and DAX for advanced metrics:
+      </p>
+      <ul class="recommendations-list">
+        <li><strong>Data cleaning:</strong> Handled missing demographics, standardized categorical fields (e.g., education levels).</li>
+        <li><strong>Feature engineering:</strong> Derived KPIs such as total campaign responses, average spend per channel, and conversion rates.</li>
+        <li><strong>DAX calculations:</strong> Created measures like ROI per campaign, response % by age group, and cumulative customer lifetime value (CLV).</li>
+        <li><strong>Dashboard design:</strong> Used interactive filters for age ranges, channels, and campaign periods to allow drill-down exploration.</li>
+      </ul>
+
+      <!-- Flow Diagram -->
+      <div class="flow-diagram" data-aos="zoom-in">
+        <div class="flow-step">
+          <i class="fas fa-file-excel"></i>
+          <p>Raw Data<br><small>Customer & campaign logs</small></p>
+        </div>
+        <div class="flow-arrow"><i class="fas fa-arrow-right"></i></div>
+        <div class="flow-step">
+          <i class="fas fa-filter"></i>
+          <p>Power Query<br><small>Cleaning & merging tables</small></p>
+        </div>
+        <div class="flow-arrow"><i class="fas fa-arrow-right"></i></div>
+        <div class="flow-step">
+          <i class="fas fa-calculator"></i>
+          <p>DAX<br><small>Custom measures & KPIs</small></p>
+        </div>
+        <div class="flow-arrow"><i class="fas fa-arrow-right"></i></div>
+        <div class="flow-step">
+          <i class="fas fa-chart-line"></i>
+          <p>Power BI Dashboard<br><small>Interactive visual storytelling</small></p>
+        </div>
+      </div>
+
+      <h2><i class="fas fa-lightbulb"></i> Key Insights</h2>
+      <div class="insights-grid">
+        <div class="insight-card"><strong>Best Performing Channel:</strong> Email campaigns<br><span class="insight-note">Highest conversion rate (~30%)</span></div>
+        <div class="insight-card"><strong>Demographic Sweet Spot:</strong> Age 30–45, middle-income<br><span class="insight-note">Strongest engagement & repeat purchases</span></div>
+        <div class="insight-card"><strong>Campaign Seasonality:</strong> End-of-year promotions<br><span class="insight-note">Spikes in November–December</span></div>
+        <div class="insight-card"><strong>Optimization Opportunity:</strong> Social media<br><span class="insight-note">Low ROI, needs targeting refinement</span></div>
+      </div>
+
+      <h2><i class="fas fa-bullseye"></i> Business Impact</h2>
+      <p>
+        By leveraging these insights, marketers can allocate budgets to the most effective channels, personalize campaigns for responsive segments, and boost ROI by over 20% in subsequent campaigns.
+      </p>
+    </div>
+
+    <!-- Related Projects -->
+    <div class="project-details enhanced-details" style="margin-top: 3rem;" data-aos="fade-up">
+      <h2><i class="fas fa-link"></i> You Can Also See</h2>
+      <ul class="related-projects-list">
+        <li><a href="project2.html"><i class="fas fa-database"></i> AdventureWorks Dashboard – Power BI</a></li>
+        <li><a href="project6.html"><i class="fab fa-spotify"></i> Spotify Analysis – Power BI</a></li>
+        <li><a href="project7.html"><i class="fas fa-film"></i> Netflix Analysis – Power BI</a></li>
+        <li><a href="project8.html"><i class="fas fa-file-excel"></i> AdventureWorks Excel Dashboard</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="enhanced-footer">
+    <div class="footer-links">
+      <a href="mailto:doaae987@gmail.com">
+        <i class="fas fa-envelope icon"></i>doaae987@gmail.com
+      </a>
+      <a href="https://linkedin.com/in/doaa-ebrahim-19b4751ba" target="_blank">
+        <i class="fab fa-linkedin icon"></i>LinkedIn
+      </a>
+      <a href="https://github.com/d088" target="_blank">
+        <i class="fab fa-github icon"></i>GitHub
+      </a>
+    </div>
+    <div class="footer-copy">
+      &copy; 2024 Doaa Ebrahim. All rights reserved.
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>AOS.init();</script>
+</body>
+</html>

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Spotify Top Songs 2023 – Power BI Analysis</title>
+  <title>AdventureWorks2022 – Excel Dashboard</title>
   <link rel="stylesheet" href="projects (1).css" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
   <script src="script.js" defer></script>
@@ -17,19 +17,23 @@
       <a href="index.html" class="cv-button back-btn">
         <i class="fas fa-arrow-left"></i> Back to Portfolio
       </a>
-      <i class="fab fa-spotify header-icon"></i>
-      <h1>Spotify Top Songs 2023 Analysis</h1>
-      <p class="subtitle">Exploring music trends through data storytelling and Power BI</p>
+      <i class="fas fa-file-excel header-icon"></i>
+      <h1>AdventureWorks2022 Sales Analysis – Excel Dashboard</h1>
+      <p class="subtitle">Turning Microsoft AdventureWorks data into actionable Excel insights</p>
     </div>
   </header>
 
   <!-- Container -->
   <section class="container enhanced-project-container">
-    <!-- Embedded Power BI Dashboard -->
-    <div class="project-frame enhanced-frame" data-aos="zoom-in">
-      <iframe title="SpotyfyDash_Day02" width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=a71831b5-fe89-4c5a-b85b-6ef49f071a65&autoAuth=true&ctid=5f593c84-cad4-46c8-b3de-321c3e829a99" 
-      frameborder="0" allowFullScreen="true"></iframe>
-    </div>
+  <!-- Embedded Excel Dashboard (Static Preview) -->
+  <div class="project-frame enhanced-frame" data-aos="zoom-in">
+    <img src="adventure excel dash.pbix.png" alt="AdventureWorks Excel Dashboard" class="project-image" style="max-width: 100%; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);">
+    <p style="text-align:center; margin-top: 1rem;">
+      <a href="https://1drv.ms/x/c/cb47ffa4b99402f9/EfpzrN9KxJBIg7r70h_69KQBiNQDMriI4qzsULrDFMZ43w?e=HSVjDf" target="_blank" class="cv-button">
+        View Interactive Excel Dashboard on OneDrive
+      </a>
+    </p>
+  </div>
 
     <!-- Social Icons -->
     <div class="fixed-icons enhanced-fixed-icons">
@@ -48,55 +52,55 @@
     <div class="project-details enhanced-details" data-aos="fade-up">
       <h2><i class="fas fa-road"></i> Project Overview</h2>
       <p>
-        In 2023, Spotify dominated global streaming, and its top songs reflect evolving listener preferences.  
-        Using the <a href="https://www.kaggle.com/datasets/nelgiriyewithana/top-spotify-songs-2023" target="_blank">Top Spotify Songs 2023</a> dataset, I explored key metrics like popularity, danceability, energy, and acousticness to understand what makes a hit song resonate with audiences.
+        This project uses the AdventureWorks2022 dataset from Microsoft — a fictional retail company widely used for training and demonstrations.  
+        The goal: build a dynamic Excel dashboard to analyze sales performance, customer trends, and product categories with minimal manual effort.
       </p>
 
       <h2><i class="fas fa-database"></i> Dataset</h2>
       <p>
-        The dataset contains 200+ top streamed songs with attributes like artist, streams, BPM, energy, danceability, and release year.  
-        Perfect for analyzing genre trends, artist dominance, and audio feature correlations.
+        AdventureWorks2022 includes fact tables for sales and inventory and dimension tables for customers, products, and geography.  
+        Ideal for creating dashboards that mimic real business intelligence solutions in Excel.
       </p>
 
       <h2><i class="fas fa-tools"></i> Approach</h2>
       <p>
-        I combined Power Query for cleaning, DAX for metrics, and Power BI visuals to narrate the music trends story.
+        I combined Power Query for data cleaning, PivotTables & PivotCharts for visualization, and Slicers & Timelines for interactivity — delivering an experience similar to Power BI, entirely inside Excel.
       </p>
 
       <!-- Flow Diagram -->
       <div class="flow-diagram" data-aos="zoom-in">
         <div class="flow-step">
-          <i class="fas fa-file-excel"></i>
-          <p>Dataset<br><small>Spotify Top Songs 2023</small></p>
+          <i class="fas fa-database"></i>
+          <p>AdventureWorks Data<br><small>Sales, Customers, Products</small></p>
+        </div>
+        <div class="flow-arrow"><i class="fas fa-arrow-right"></i></div>
+        <div class="flow-step">
+          <i class="fas fa-broom"></i>
+          <p>Power Query<br><small>Cleaning & merging tables</small></p>
+        </div>
+        <div class="flow-arrow"><i class="fas fa-arrow-right"></i></div>
+        <div class="flow-step">
+          <i class="fas fa-chart-pie"></i>
+          <p>PivotTables & Charts<br><small>Interactive visuals</small></p>
         </div>
         <div class="flow-arrow"><i class="fas fa-arrow-right"></i></div>
         <div class="flow-step">
           <i class="fas fa-filter"></i>
-          <p>Power Query<br><small>Clean & transform data</small></p>
-        </div>
-        <div class="flow-arrow"><i class="fas fa-arrow-right"></i></div>
-        <div class="flow-step">
-          <i class="fas fa-calculator"></i>
-          <p>DAX<br><small>Custom metrics: popularity index, genre averages</small></p>
-        </div>
-        <div class="flow-arrow"><i class="fas fa-arrow-right"></i></div>
-        <div class="flow-step">
-          <i class="fas fa-chart-line"></i>
-          <p>Power BI Dashboard<br><small>Interactive insights & trends</small></p>
+          <p>Slicers & Timelines<br><small>User-driven filtering</small></p>
         </div>
       </div>
 
       <h2><i class="fas fa-lightbulb"></i> Key Insights</h2>
       <div class="insights-grid">
-        <div class="insight-card"><strong>Most Streamed Genre:</strong> Pop<br><span class="insight-note">Dominates 2023 charts globally</span></div>
-        <div class="insight-card"><strong>Top Artist:</strong> Taylor Swift<br><span class="insight-note">Multiple tracks in top rankings</span></div>
-        <div class="insight-card"><strong>Average BPM:</strong> 120–130<br><span class="insight-note">High-energy tracks lead the charts</span></div>
-        <div class="insight-card"><strong>Feature Correlation:</strong> Danceability & Popularity<br><span class="insight-note">Strong positive relationship</span></div>
+        <div class="insight-card"><strong>Top Products:</strong> Bikes & Accessories<br><span class="insight-note">Highest sales contribution</span></div>
+        <div class="insight-card"><strong>Regional Performance:</strong> US & Europe<br><span class="insight-note">Leading markets by revenue</span></div>
+        <div class="insight-card"><strong>Seasonality:</strong> Q4 sales peaks<br><span class="insight-note">Holiday season drives growth</span></div>
+        <div class="insight-card"><strong>Customer Segments:</strong> Wholesale > Retail<br><span class="insight-note">B2B dominates revenue mix</span></div>
       </div>
 
       <h2><i class="fas fa-bullseye"></i> Why It Matters</h2>
       <p>
-        This analysis gives record labels and artists data-backed insights into what drives listener engagement and helps them plan releases aligned with audience preferences.
+        This dashboard enables stakeholders to monitor performance quickly, spot seasonal trends, and prioritize products and regions — without requiring advanced BI tools.
       </p>
     </div>
 
@@ -104,11 +108,10 @@
     <div class="project-details enhanced-details" style="margin-top: 3rem;" data-aos="fade-up">
       <h2><i class="fas fa-link"></i> You Can Also See</h2>
       <ul class="related-projects-list">
-        <li><a href="project1.html"><i class="fas fa-chart-line"></i> YouTube Dashboard – Power BI</a></li>
         <li><a href="project2.html"><i class="fas fa-database"></i> AdventureWorks Dashboard – Power BI</a></li>
         <li><a href="project3.html"><i class="fas fa-chart-bar"></i> Superstore Sales Analysis – Tableau</a></li>
-        <li><a href="project4.html"><i class="fas fa-code"></i> Google Store Cleaning & EDA – Python Notebook</a></li>
-        <li><a href="project5.html"><i class="fas fa-car"></i> Car Price Prediction – ML</a></li>
+        <li><a href="project6.html"><i class="fab fa-spotify"></i> Spotify Analysis – Power BI</a></li>
+        <li><a href="project7.html"><i class="fas fa-film"></i> Netflix Analysis – Power BI</a></li>
       </ul>
     </div>
   </section>

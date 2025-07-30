@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Spotify Top Songs 2023 – Power BI Analysis</title>
+  <title>Netflix Movies & TV Shows – Power BI Analysis</title>
   <link rel="stylesheet" href="projects (1).css" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
   <script src="script.js" defer></script>
@@ -17,9 +17,9 @@
       <a href="index.html" class="cv-button back-btn">
         <i class="fas fa-arrow-left"></i> Back to Portfolio
       </a>
-      <i class="fab fa-spotify header-icon"></i>
-      <h1>Spotify Top Songs 2023 Analysis</h1>
-      <p class="subtitle">Exploring music trends through data storytelling and Power BI</p>
+      <i class="fas fa-film header-icon"></i>
+      <h1>Netflix Movies & TV Shows Analysis</h1>
+      <p class="subtitle">Uncovering global content trends with Power BI</p>
     </div>
   </header>
 
@@ -27,7 +27,7 @@
   <section class="container enhanced-project-container">
     <!-- Embedded Power BI Dashboard -->
     <div class="project-frame enhanced-frame" data-aos="zoom-in">
-      <iframe title="SpotyfyDash_Day02" width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=a71831b5-fe89-4c5a-b85b-6ef49f071a65&autoAuth=true&ctid=5f593c84-cad4-46c8-b3de-321c3e829a99" 
+      <iframe title="Netflix_dash_Day011" width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=27f420fc-a14e-4812-a3a7-2a12aea164b1&autoAuth=true&ctid=5f593c84-cad4-46c8-b3de-321c3e829a99" 
       frameborder="0" allowFullScreen="true"></iframe>
     </div>
 
@@ -48,55 +48,63 @@
     <div class="project-details enhanced-details" data-aos="fade-up">
       <h2><i class="fas fa-road"></i> Project Overview</h2>
       <p>
-        In 2023, Spotify dominated global streaming, and its top songs reflect evolving listener preferences.  
-        Using the <a href="https://www.kaggle.com/datasets/nelgiriyewithana/top-spotify-songs-2023" target="_blank">Top Spotify Songs 2023</a> dataset, I explored key metrics like popularity, danceability, energy, and acousticness to understand what makes a hit song resonate with audiences.
+        Netflix has revolutionized entertainment by offering a vast library of movies and TV shows worldwide.  
+        This project analyzes the <a href="https://www.kaggle.com/datasets/snehaanbhawal/netflix-tv-shows-and-movie-list" target="_blank">Netflix Titles Dataset</a> to uncover content distribution, release trends, and genre popularity using Power BI.
       </p>
 
       <h2><i class="fas fa-database"></i> Dataset</h2>
       <p>
-        The dataset contains 200+ top streamed songs with attributes like artist, streams, BPM, energy, danceability, and release year.  
-        Perfect for analyzing genre trends, artist dominance, and audio feature correlations.
+        The dataset includes TV shows and movies with details like title, genre, release year, rating, duration, and country of origin.  
+        Perfect for exploring what content Netflix prioritizes and how it evolves over time.
       </p>
 
       <h2><i class="fas fa-tools"></i> Approach</h2>
       <p>
-        I combined Power Query for cleaning, DAX for metrics, and Power BI visuals to narrate the music trends story.
+        I used Power Query to clean and structure the dataset, followed by DAX measures for advanced KPIs (e.g., content count by type, genre distribution, release frequency).  
+        Finally, I built an interactive Power BI dashboard to explore content patterns.
       </p>
 
       <!-- Flow Diagram -->
       <div class="flow-diagram" data-aos="zoom-in">
         <div class="flow-step">
           <i class="fas fa-file-excel"></i>
-          <p>Dataset<br><small>Spotify Top Songs 2023</small></p>
+          <p>Netflix Dataset<br><small>Kaggle source</small></p>
         </div>
         <div class="flow-arrow"><i class="fas fa-arrow-right"></i></div>
         <div class="flow-step">
           <i class="fas fa-filter"></i>
-          <p>Power Query<br><small>Clean & transform data</small></p>
+          <p>Power Query<br><small>Data cleaning & shaping</small></p>
         </div>
         <div class="flow-arrow"><i class="fas fa-arrow-right"></i></div>
         <div class="flow-step">
           <i class="fas fa-calculator"></i>
-          <p>DAX<br><small>Custom metrics: popularity index, genre averages</small></p>
+          <p>DAX<br><small>KPIs & custom calculations</small></p>
         </div>
         <div class="flow-arrow"><i class="fas fa-arrow-right"></i></div>
         <div class="flow-step">
           <i class="fas fa-chart-line"></i>
-          <p>Power BI Dashboard<br><small>Interactive insights & trends</small></p>
+          <p>Power BI Dashboard<br><small>Visual storytelling</small></p>
         </div>
       </div>
 
       <h2><i class="fas fa-lightbulb"></i> Key Insights</h2>
       <div class="insights-grid">
-        <div class="insight-card"><strong>Most Streamed Genre:</strong> Pop<br><span class="insight-note">Dominates 2023 charts globally</span></div>
-        <div class="insight-card"><strong>Top Artist:</strong> Taylor Swift<br><span class="insight-note">Multiple tracks in top rankings</span></div>
-        <div class="insight-card"><strong>Average BPM:</strong> 120–130<br><span class="insight-note">High-energy tracks lead the charts</span></div>
-        <div class="insight-card"><strong>Feature Correlation:</strong> Danceability & Popularity<br><span class="insight-note">Strong positive relationship</span></div>
+        <div class="insight-card"><strong>Content Type:</strong> 70% Movies<br><span class="insight-note">Films dominate Netflix library</span></div>
+        <div class="insight-card"><strong>Top Genres:</strong> Drama & Comedy<br><span class="insight-note">Consistently high production volume</span></div>
+        <div class="insight-card"><strong>Content Growth:</strong> Post-2015 Spike<br><span class="insight-note">Rapid expansion in originals</span></div>
+        <div class="insight-card"><strong>Global Presence:</strong> 100+ Countries<br><span class="insight-note">Diverse regional contributions</span></div>
       </div>
+
+      <h2><i class="fas fa-code-branch"></i> GitHub Repository</h2>
+      <p>
+        Full code, including EDA notebook, and Dash dashboard, is available here:  
+        <a href="https://github.com/d088/Netflix-daata" target="_blank">GitHub – Vehicles Price EDA & Prediction</a>
+      </p>
+
 
       <h2><i class="fas fa-bullseye"></i> Why It Matters</h2>
       <p>
-        This analysis gives record labels and artists data-backed insights into what drives listener engagement and helps them plan releases aligned with audience preferences.
+        These insights help content strategists and marketers understand viewer preferences and guide Netflix’s future content investments across genres and regions.
       </p>
     </div>
 
@@ -109,6 +117,7 @@
         <li><a href="project3.html"><i class="fas fa-chart-bar"></i> Superstore Sales Analysis – Tableau</a></li>
         <li><a href="project4.html"><i class="fas fa-code"></i> Google Store Cleaning & EDA – Python Notebook</a></li>
         <li><a href="project5.html"><i class="fas fa-car"></i> Car Price Prediction – ML</a></li>
+        <li><a href="project6.html"><i class="fab fa-spotify"></i> Spotify Analysis – Power BI</a></li>
       </ul>
     </div>
   </section>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ITI Examination Management System – SSRS + Power BI</title>
+  <link rel="stylesheet" href="projects (1).css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+  <script src="script.js" defer></script>
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header class="project-header enhanced-header">
+    <div class="header-bg"></div>
+    <div class="header-content">
+      <a href="index.html" class="cv-button back-btn">
+        <i class="fas fa-arrow-left"></i> Back to Portfolio
+      </a>
+      <i class="fas fa-university header-icon"></i>
+      <h1>ITI Examination Management System</h1>
+      <p class="subtitle">Full-cycle automation from registration to analytics using SQL Server, SSRS, and Power BI</p>
+    </div>
+  </header>
+
+  <!-- Container -->
+  <section class="container enhanced-project-container">
+    <!-- Embedded Power BI Dashboard -->
+    <div class="project-frame enhanced-frame" data-aos="zoom-in">
+      <iframe title="Final" width="1140" height="541.25"
+        src="https://app.powerbi.com/reportEmbed?reportId=6cb863a2-d582-45c2-9f1a-ef517ba73617&autoAuth=true&ctid=5f593c84-cad4-46c8-b3de-321c3e829a99"
+        frameborder="0" allowfullscreen="true"></iframe>
+    </div>
+
+    <!-- Social Icons -->
+    <div class="fixed-icons enhanced-fixed-icons">
+      <a href="https://linkedin.com/in/doaa-ebrahim-19b4751ba" target="_blank" title="LinkedIn" class="sticker bounce">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://github.com/d088" target="_blank" title="GitHub" class="sticker wiggle">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="mailto:doaae987@gmail.com" title="Email" class="sticker bounce">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </div>
+
+    <!-- Project Story -->
+    <div class="project-details enhanced-details" data-aos="fade-up">
+      <h2><i class="fas fa-road"></i> Project Overview</h2>
+      <p>
+        This was our final graduation project at ITI — a complete Examination Management System built to automate and manage the entire academic examination lifecycle.  
+        Starting from student registration to exam scheduling, grading automation, and performance analytics, the system integrated SQL Server, .NET technologies, and BI tools into one seamless solution for academic institutions.
+      </p>
+
+      <h2><i class="fas fa-cogs"></i> Features & Functionality</h2>
+      <ul class="recommendations-list">
+        <li><strong>Student Registration:</strong> Secure onboarding with validation and duplicate checks.</li>
+        <li><strong>Exam Scheduling:</strong> Automated conflict-free scheduling based on course and instructor availability.</li>
+        <li><strong>Grading Automation:</strong> Instant score calculation for objective exams and result publishing.</li>
+        <li><strong>Performance Analytics:</strong> Power BI dashboards for insights on student progress, pass rates, and instructor performance.</li>
+      </ul>
+
+      <h2><i class="fas fa-database"></i> Data Architecture</h2>
+      <p>
+        Designed an optimized relational schema and ERD covering students, instructors, courses, exams, and results. Applied:
+      </p>
+      <ul class="recommendations-list">
+        <li>Normalization and referential integrity using PK/FK constraints</li>
+        <li>Stored Procedures for exam calculations and scheduling validations</li>
+        <li>Triggers for data consistency and audit trails</li>
+        <li>Indexes for high-performance querying</li>
+      </ul>
+
+      <h2><i class="fas fa-chart-bar"></i> Reporting & BI</h2>
+      <p>
+        - Built 20+ Power BI dashboards with KPIs like top performers, pass/fail trends, and department-wise insights.  
+        - Designed SSRS reports for printable grade sheets, instructor reports, and exam summaries.  
+        - Used Power Query & DAX for advanced transformations and calculated metrics.
+      </p>
+
+      <!-- Flow Diagram -->
+      <div class="flow-diagram" data-aos="zoom-in">
+        <div class="flow-step">
+          <i class="fas fa-pencil-ruler"></i>
+          <p>Schema Design<br><small>Students, Courses, Exams</small></p>
+        </div>
+        <div class="flow-arrow"><i class="fas fa-arrow-right"></i></div>
+        <div class="flow-step">
+          <i class="fas fa-database"></i>
+          <p>SQL Server + SSIS<br><small>Data population & ETL</small></p>
+        </div>
+        <div class="flow-arrow"><i class="fas fa-arrow-right"></i></div>
+        <div class="flow-step">
+          <i class="fas fa-file-alt"></i>
+          <p>SSRS Reports<br><small>Printable academic reports</small></p>
+        </div>
+        <div class="flow-arrow"><i class="fas fa-arrow-right"></i></div>
+        <div class="flow-step">
+          <i class="fas fa-chart-line"></i>
+          <p>Power BI Dashboards<br><small>Interactive analytics</small></p>
+        </div>
+      </div>
+
+      <h2><i class="fas fa-lightbulb"></i> Key Insights</h2>
+      <div class="insights-grid">
+        <div class="insight-card"><strong>Pass Rate:</strong> 87% overall<br><span class="insight-note">Clear visibility into departmental performance</span></div>
+        <div class="insight-card"><strong>Top Course:</strong> Database Systems<br><span class="insight-note">Consistently highest scores</span></div>
+        <div class="insight-card"><strong>Instructor Analytics:</strong> Measured effectiveness via class averages and trends</div>
+        <div class="insight-card"><strong>Exam Trends:</strong> Second semester improvements highlighted for admin decisions</div>
+      </div>
+
+      <h2><i class="fas fa-star"></i> Tech Stack</h2>
+      <ul class="recommendations-list">
+        <li>Backend: SQL Server, T-SQL (Stored Procedures, Functions, Triggers)</li>
+        <li>ETL: SSIS</li>
+        <li>Frontend: C# (.NET Framework), Windows Forms</li>
+        <li>Reporting & BI: SSRS, Power BI</li>
+      </ul>
+       <h2><i class="fas fa-folder-open"></i> Source Files</h2>
+      <p>
+        You can access all files, scripts, datasets, and reports in this Google Drive folder:<br>
+        <a href="https://drive.google.com/drive/folders/1AemHmwBx9k9P5RSgliJ2Xb88BdIzSuf6" target="_blank" class="cv-button">📂 View Full Project Drive</a>
+      </p>
+    </div>
+   
+
+    <!-- Related Projects -->
+    <div class="project-details enhanced-details" style="margin-top: 3rem;" data-aos="fade-up">
+      <h2><i class="fas fa-link"></i> You Can Also See</h2>
+      <ul class="related-projects-list">
+        <li><a href="project9.html"><i class="fas fa-bullhorn"></i> Marketing Campaign Analysis – Power BI</a></li>
+        <li><a href="project8.html"><i class="fas fa-file-excel"></i> AdventureWorks Excel Dashboard</a></li>
+        <li><a href="project10.html"><i class="fas fa-home"></i> Melbourne Housing Analysis – Power BI</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="enhanced-footer">
+    <div class="footer-links">
+      <a href="mailto:doaae987@gmail.com">
+        <i class="fas fa-envelope icon"></i>doaae987@gmail.com
+      </a>
+      <a href="https://linkedin.com/in/doaa-ebrahim-19b4751ba" target="_blank">
+        <i class="fab fa-linkedin icon"></i>LinkedIn
+      </a>
+      <a href="https://github.com/d088" target="_blank">
+        <i class="fab fa-github icon"></i>GitHub
+      </a>
+    </div>
+    <div class="footer-copy">
+      &copy; 2024 Doaa Ebrahim. All rights reserved.
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>AOS.init();</script>
+</body>
+</html>

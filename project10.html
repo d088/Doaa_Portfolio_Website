@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Melbourne Housing Analysis – Power BI</title>
+  <link rel="stylesheet" href="projects (1).css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+  <script src="script.js" defer></script>
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header class="project-header enhanced-header">
+    <div class="header-bg"></div>
+    <div class="header-content">
+      <a href="index.html" class="cv-button back-btn">
+        <i class="fas fa-arrow-left"></i> Back to Portfolio
+      </a>
+      <i class="fas fa-home header-icon"></i>
+      <h1>Melbourne Housing Market Analysis</h1>
+      <p class="subtitle">Exploring property trends & pricing dynamics with Power BI</p>
+    </div>
+  </header>
+
+  <!-- Container -->
+  <section class="container enhanced-project-container">
+    <!-- Embedded Power BI Dashboard -->
+    <div class="project-frame enhanced-frame" data-aos="zoom-in">
+      <iframe title="Melborne_realEstate" width="1140" height="541.25"
+        src="https://app.powerbi.com/reportEmbed?reportId=a1182bc4-e059-4db8-b104-67e28693a739&autoAuth=true&ctid=5f593c84-cad4-46c8-b3de-321c3e829a99"
+        frameborder="0" allowfullscreen="true"></iframe>
+    </div>
+
+    <!-- Social Icons -->
+    <div class="fixed-icons enhanced-fixed-icons">
+      <a href="https://linkedin.com/in/doaa-ebrahim-19b4751ba" target="_blank" title="LinkedIn" class="sticker bounce">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://github.com/d088" target="_blank" title="GitHub" class="sticker wiggle">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="mailto:doaae987@gmail.com" title="Email" class="sticker bounce">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </div>
+
+    <!-- Storytelling Content -->
+    <div class="project-details enhanced-details" data-aos="fade-up">
+      <h2><i class="fas fa-road"></i> Project Overview</h2>
+      <p>
+        The Melbourne real estate market is one of the most dynamic in Australia, influenced by location, property type, and market cycles.  
+        This project uses the <a href="https://www.kaggle.com/datasets/dansbecker/melbourne-housing-snapshot" target="_blank">Melbourne Housing Snapshot</a> dataset to analyze property prices, suburbs, and attributes to uncover pricing trends and investment opportunities.
+      </p>
+
+      <h2><i class="fas fa-database"></i> Dataset Details</h2>
+      <p>
+        The dataset contains over 34,000 property records including:
+      </p>
+      <ul class="recommendations-list">
+        <li><strong>Property attributes:</strong> Price, type, rooms, land size, building area</li>
+        <li><strong>Location:</strong> Suburb, postcode, region, council area</li>
+        <li><strong>Market data:</strong> Sale date, distance from CBD, year built</li>
+      </ul>
+      <p>
+        This data is ideal for analyzing market hotspots, price distribution, and property size-to-price relationships.
+      </p>
+
+      <h2><i class="fas fa-tools"></i> Analytical Approach</h2>
+      <p>
+        I combined Power Query for data cleaning (handling missing values, standardizing suburbs) and DAX for KPIs such as median price by region, average property size, and price per square meter.  
+        The dashboard allows filtering by suburb, property type, and time period to explore market patterns interactively.
+      </p>
+
+      <!-- Flow Diagram -->
+      <div class="flow-diagram" data-aos="zoom-in">
+        <div class="flow-step">
+          <i class="fas fa-database"></i>
+          <p>Melbourne Housing Data<br><small>From Kaggle</small></p>
+        </div>
+        <div class="flow-arrow"><i class="fas fa-arrow-right"></i></div>
+        <div class="flow-step">
+          <i class="fas fa-filter"></i>
+          <p>Power Query<br><small>Clean & merge property data</small></p>
+        </div>
+        <div class="flow-arrow"><i class="fas fa-arrow-right"></i></div>
+        <div class="flow-step">
+          <i class="fas fa-calculator"></i>
+          <p>DAX<br><small>Pricing metrics & KPIs</small></p>
+        </div>
+        <div class="flow-arrow"><i class="fas fa-arrow-right"></i></div>
+        <div class="flow-step">
+          <i class="fas fa-chart-line"></i>
+          <p>Power BI Dashboard<br><small>Interactive analysis</small></p>
+        </div>
+      </div>
+
+      <h2><i class="fas fa-lightbulb"></i> Key Insights</h2>
+      <div class="insights-grid">
+        <div class="insight-card"><strong>Highest Price Suburb:</strong> Toorak<br><span class="insight-note">Premium properties dominate sales</span></div>
+        <div class="insight-card"><strong>Distance Impact:</strong> CBD proximity<br><span class="insight-note">Clear price drop beyond 15km</span></div>
+        <div class="insight-card"><strong>Property Type Trend:</strong> Houses > Units<br><span class="insight-note">Houses retain higher market value</span></div>
+        <div class="insight-card"><strong>Growth Areas:</strong> Inner & Middle-ring suburbs<br><span class="insight-note">Steady year-over-year appreciation</span></div>
+      </div>
+
+      <h2><i class="fas fa-bullseye"></i> Business Impact</h2>
+      <p>
+        These insights help buyers, investors, and developers identify high-value suburbs, evaluate price trends, and plan strategic investments in Melbourne’s housing market.
+      </p>
+    </div>
+
+    <!-- Related Projects -->
+    <div class="project-details enhanced-details" style="margin-top: 3rem;" data-aos="fade-up">
+      <h2><i class="fas fa-link"></i> You Can Also See</h2>
+      <ul class="related-projects-list">
+        <li><a href="project7.html"><i class="fas fa-film"></i> Netflix Analysis – Power BI</a></li>
+        <li><a href="project8.html"><i class="fas fa-file-excel"></i> AdventureWorks Excel Dashboard</a></li>
+        <li><a href="project9.html"><i class="fas fa-bullhorn"></i> Marketing Campaign Analysis – Power BI</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="enhanced-footer">
+    <div class="footer-links">
+      <a href="mailto:doaae987@gmail.com">
+        <i class="fas fa-envelope icon"></i>doaae987@gmail.com
+      </a>
+      <a href="https://linkedin.com/in/doaa-ebrahim-19b4751ba" target="_blank">
+        <i class="fab fa-linkedin icon"></i>LinkedIn
+      </a>
+      <a href="https://github.com/d088" target="_blank">
+        <i class="fab fa-github icon"></i>GitHub
+      </a>
+    </div>
+    <div class="footer-copy">
+      &copy; 2024 Doaa Ebrahim. All rights reserved.
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>AOS.init();</script>
+</body>
+</html>
